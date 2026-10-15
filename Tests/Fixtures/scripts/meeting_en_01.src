@@ -1,0 +1,34 @@
+# voices: A=Samantha B=Daniel C=Karen
+A: Okay, let's get started, we have a lot to cover and only thirty minutes.
+A: First item is the release plan for the new version of the app.
+A: After yesterday's review, the launch date moved to the twentieth of March. ## fact=launch date moved to the twentieth of March ## q=What did the speaker just say about the launch date? ## must=March
+B: That works for engineering, but only if we fix the crash first.
+A: Right, can you give us an update on that?
+B: Sure. The crash happens only on older tablets, when the app is resumed from the background. ## fact=crash happens only on older tablets ## q=What did the speaker just say about the crash? ## must=tablet
+B: We can reproduce it now, and I expect a fix by the end of the week.
+C: Is it affecting many users?
+B: About two percent of sessions, mostly in schools that use older devices.
+C: Then we should mention it in the release notes either way.
+A: Agreed. Next, the feature everyone keeps asking about.
+A: We are going to call the new feature Quick Share, and it lets people send a list to a friend in one tap. ## fact=new feature is called Quick Share ## q=What did the speaker just say about the new feature? ## must=quick share|quickshare
+C: Marketing likes the name, so no objections from us.
+C: But I have some less good news about our side.
+C: The marketing budget for the spring campaign is cut by fifteen percent. ## fact=marketing budget cut by fifteen percent ## q=What did the speaker just say about the marketing budget? ## must=fifteen|15
+C: So we will focus on social media and drop the printed posters.
+A: That is a shame, but it makes sense.
+B: On the infrastructure side, the backend migration to the new database finishes next Tuesday. ## fact=backend database migration finishes next Tuesday ## q=What did the speaker just say about the database migration? ## must=tuesday
+B: There will be a short maintenance window at night, around one hour.
+A: Please post the exact time in the channel once you know it.
+B: Will do. And one good number to share, page load time is now one point two seconds on average. ## fact=page load time is now 1.2 seconds ## q=What did the speaker just say about page load time? ## must=1.2|one point two
+C: That is a big improvement, we can use it in the campaign.
+C: We also finished the user survey last week.
+C: The feature people want most is a dark mode, by a wide margin. ## fact=users most want a dark mode ## q=What did the speaker just say about the user survey? ## must=dark mode
+A: Interesting, let's put that on the roadmap for the summer.
+A: On staffing, we will hire two more designers in January. ## fact=two more designers will be hired in January ## q=What did the speaker just say about hiring? ## must=january
+A: The job posts go out next week, so please share them with anyone you know.
+C: One more thing from me, the customer advisory board meets in Lisbon this year. ## fact=customer advisory board meets in Lisbon ## q=What did the speaker just say about the advisory board? ## must=lisbon
+C: Two of us will travel, and we will report back afterwards.
+A: Great. Last point, the next meeting is moved to Thursday afternoon because of the public holiday. ## fact=next meeting moved to Thursday afternoon ## q=What did the speaker just say about the next meeting? ## must=thursday
+B: Thursday is fine for me.
+C: For me too.
+A: Perfect, thanks everyone, that's all for today.

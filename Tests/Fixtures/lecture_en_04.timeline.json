@@ -1,0 +1,248 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 5.065,
+    "speaker": "Samantha",
+    "text": "Welcome to the software project course, and thank you for coming to the first session."
+  },
+  {
+    "t0": 5.665,
+    "t1": 11.154,
+    "speaker": "Samantha",
+    "text": "This term you will build a real application for a real client, from the first interview to the final demo."
+  },
+  {
+    "t0": 11.754,
+    "t1": 16.968,
+    "speaker": "Samantha",
+    "text": "The client for this year's project is the city library, and they need a new system for room bookings."
+  },
+  {
+    "t0": 17.568,
+    "t1": 20.84,
+    "speaker": "Samantha",
+    "text": "They will join us twice during the term to review what you have built."
+  },
+  {
+    "t0": 21.84,
+    "t1": 23.951,
+    "speaker": "Rishi",
+    "text": "Let me go through how the teams work."
+  },
+  {
+    "t0": 24.55,
+    "t1": 29.961,
+    "speaker": "Rishi",
+    "text": "You will work in teams of four students, and we form the teams by the end of this week."
+  },
+  {
+    "t0": 30.561,
+    "t1": 34.804,
+    "speaker": "Rishi",
+    "text": "Each team chooses a team lead, but the role rotates every three weeks."
+  },
+  {
+    "t0": 35.404,
+    "t1": 39.593,
+    "speaker": "Rishi",
+    "text": "That way everyone gets some practice at planning and at saying no."
+  },
+  {
+    "t0": 40.193,
+    "t1": 45.564,
+    "speaker": "Rishi",
+    "text": "In the first two weeks you will interview the librarians and write down what they actually need."
+  },
+  {
+    "t0": 46.164,
+    "t1": 51.851,
+    "speaker": "Rishi",
+    "text": "Do not start coding before you understand the problem, it is the most common mistake we see."
+  },
+  {
+    "t0": 52.451,
+    "t1": 57.545,
+    "speaker": "Rishi",
+    "text": "Write the requirements as short user stories, and check each one with the client."
+  },
+  {
+    "t0": 58.545,
+    "t1": 60.813,
+    "speaker": "Samantha",
+    "text": "Now the tools, which are not optional."
+  },
+  {
+    "t0": 61.413,
+    "t1": 65.572,
+    "speaker": "Samantha",
+    "text": "All code must live in the university GitLab, not on personal accounts."
+  },
+  {
+    "t0": 66.172,
+    "t1": 70.11,
+    "speaker": "Samantha",
+    "text": "We look at the commit history when we grade, so commit early and commit often."
+  },
+  {
+    "t0": 70.71,
+    "t1": 74.225,
+    "speaker": "Samantha",
+    "text": "Every change needs approval from two teammates before it is merged."
+  },
+  {
+    "t0": 74.825,
+    "t1": 78.745,
+    "speaker": "Samantha",
+    "text": "Reviews are where most of the learning happens, so take them seriously."
+  },
+  {
+    "t0": 79.745,
+    "t1": 82.045,
+    "speaker": "Rishi",
+    "text": "On testing, we have a simple rule."
+  },
+  {
+    "t0": 82.645,
+    "t1": 86.927,
+    "speaker": "Rishi",
+    "text": "The target for automated test coverage is seventy percent of the code."
+  },
+  {
+    "t0": 87.527,
+    "t1": 91.876,
+    "speaker": "Rishi",
+    "text": "Coverage is not quality, but a project with no tests is not finished."
+  },
+  {
+    "t0": 92.476,
+    "t1": 96.258,
+    "speaker": "Rishi",
+    "text": "We will show you how to run the tests automatically on every push."
+  },
+  {
+    "t0": 97.258,
+    "t1": 99.076,
+    "speaker": "Samantha",
+    "text": "Next, the rhythm of the week."
+  },
+  {
+    "t0": 99.676,
+    "t1": 104.643,
+    "speaker": "Samantha",
+    "text": "There is a short stand up meeting every Monday at nine, and it takes fifteen minutes at most."
+  },
+  {
+    "t0": 105.243,
+    "t1": 109.734,
+    "speaker": "Samantha",
+    "text": "Each person says what they did, what they will do next, and what is blocking them."
+  },
+  {
+    "t0": 110.334,
+    "t1": 114.987,
+    "speaker": "Samantha",
+    "text": "If something is blocking you for more than a day, tell us, do not wait for the meeting."
+  },
+  {
+    "t0": 115.587,
+    "t1": 120.357,
+    "speaker": "Samantha",
+    "text": "Keep a shared board with all open tasks, and move each card when its status changes."
+  },
+  {
+    "t0": 120.957,
+    "t1": 124.674,
+    "speaker": "Samantha",
+    "text": "We will look at the board during the weekly meetings, so keep it honest."
+  },
+  {
+    "t0": 125.274,
+    "t1": 129.346,
+    "speaker": "Samantha",
+    "text": "A board full of cards marked almost done usually means nothing is done at all."
+  },
+  {
+    "t0": 130.346,
+    "t1": 132.501,
+    "speaker": "Rishi",
+    "text": "Some practical matters about money."
+  },
+  {
+    "t0": 133.101,
+    "t1": 138.98,
+    "speaker": "Rishi",
+    "text": "Each team gets a budget of five hundred euros for hardware, such as tablets for testing."
+  },
+  {
+    "t0": 139.58,
+    "t1": 143.546,
+    "speaker": "Rishi",
+    "text": "Keep the receipts, the finance office is very strict about them."
+  },
+  {
+    "t0": 144.546,
+    "t1": 146.004,
+    "speaker": "Samantha",
+    "text": "Now the important dates."
+  },
+  {
+    "t0": 146.604,
+    "t1": 151.522,
+    "speaker": "Samantha",
+    "text": "Demo day is on December the third, in the main hall, and the client will be in the audience."
+  },
+  {
+    "t0": 152.122,
+    "t1": 155.754,
+    "speaker": "Samantha",
+    "text": "Each team gets ten minutes to present and five minutes for questions."
+  },
+  {
+    "t0": 156.354,
+    "t1": 161.562,
+    "speaker": "Samantha",
+    "text": "Rehearse the demo at least twice, and always have a backup video in case the network fails."
+  },
+  {
+    "t0": 162.162,
+    "t1": 166.468,
+    "speaker": "Samantha",
+    "text": "Show the client the thing they asked for first, and the clever extras afterwards."
+  },
+  {
+    "t0": 167.068,
+    "t1": 170.06,
+    "speaker": "Samantha",
+    "text": "Every member of the team should speak during the presentation."
+  },
+  {
+    "t0": 171.06,
+    "t1": 173.465,
+    "speaker": "Rishi",
+    "text": "After the demo you hand in a written report."
+  },
+  {
+    "t0": 174.065,
+    "t1": 178.288,
+    "speaker": "Rishi",
+    "text": "The final report is limited to twenty pages, including figures."
+  },
+  {
+    "t0": 178.888,
+    "t1": 182.077,
+    "speaker": "Rishi",
+    "text": "Shorter is fine, and clearer is always better."
+  },
+  {
+    "t0": 182.677,
+    "t1": 187.005,
+    "speaker": "Rishi",
+    "text": "Late submissions lose five percent of the mark for every day they are late."
+  },
+  {
+    "t0": 188.005,
+    "t1": 191.021,
+    "speaker": "Samantha",
+    "text": "That is the overview, now let us take your questions."
+  }
+]

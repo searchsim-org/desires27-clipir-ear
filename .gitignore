@@ -1,0 +1,28 @@
+# Xcode / Swift
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcresult
+*.ipa
+*.dSYM.zip
+# built and fetched by `make deps`
+Packages/
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+# models and audio: never commit weights or recordings
+/models/
+*.gguf
+*.onnx
+*.bin
+*.wav
+Recordings/
+# local data
+*.db
+*.db-wal
+*.db-shm
+.DS_Store

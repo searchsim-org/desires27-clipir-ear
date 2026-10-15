@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/tts.start",
+  "title": "tts.start",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "sample_rate"
+  ],
+  "properties": {
+    "t": {
+      "const": "tts.start"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "sample_rate": {
+      "type": "integer"
+    }
+  }
+}

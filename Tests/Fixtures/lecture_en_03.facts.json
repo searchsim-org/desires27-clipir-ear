@@ -1,0 +1,102 @@
+[
+  {
+    "t": 18.123,
+    "fact": "reefs cover less than one percent of the ocean floor",
+    "question": "What did the speaker just say about how much of the ocean floor reefs cover?",
+    "must_contain": [
+      "one percent",
+      "1%",
+      "1 percent"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 40.542,
+    "fact": "algae inside the coral give corals their colour",
+    "question": "What did the speaker just say about the algae?",
+    "must_contain": [
+      "colour",
+      "color"
+    ],
+    "speaker": "Tessa"
+  },
+  {
+    "t": 74.71,
+    "fact": "bleaching starts at about one degree above the summer maximum",
+    "question": "What did the speaker just say about when bleaching starts?",
+    "must_contain": [
+      "one degree",
+      "1 degree"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 93.669,
+    "fact": "study reef recovered in about a decade",
+    "question": "What did the speaker just say about the reef recovery?",
+    "must_contain": [
+      "decade",
+      "ten years",
+      "10 years"
+    ],
+    "speaker": "Tessa"
+  },
+  {
+    "t": 116.451,
+    "fact": "parrotfish produce sand",
+    "question": "What did the speaker just say about parrotfish?",
+    "must_contain": [
+      "sand"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 135.909,
+    "fact": "dive surveys at a depth of fifteen metres",
+    "question": "What did the speaker just say about the dive surveys?",
+    "must_contain": [
+      "fifteen",
+      "15"
+    ],
+    "speaker": "Tessa"
+  },
+  {
+    "t": 147.061,
+    "fact": "sensor buoys send data every thirty minutes",
+    "question": "What did the speaker just say about the sensor buoys?",
+    "must_contain": [
+      "thirty",
+      "30"
+    ],
+    "speaker": "Tessa"
+  },
+  {
+    "t": 152.759,
+    "fact": "samples stored at minus eighty degrees",
+    "question": "What did the speaker just say about the tissue samples?",
+    "must_contain": [
+      "eighty",
+      "80"
+    ],
+    "speaker": "Tessa"
+  },
+  {
+    "t": 162.73,
+    "fact": "the research vessel is named Albatross",
+    "question": "What did the speaker just say about the research vessel?",
+    "must_contain": [
+      "Albatross"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 176.671,
+    "fact": "the exam will be open book",
+    "question": "What did the speaker just say about the exam?",
+    "must_contain": [
+      "open book",
+      "open-book"
+    ],
+    "speaker": "Tessa"
+  }
+]

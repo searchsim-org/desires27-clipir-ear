@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/welcome",
+  "title": "welcome",
+  "type": "object",
+  "required": [
+    "t",
+    "server",
+    "session_token"
+  ],
+  "properties": {
+    "t": {
+      "const": "welcome"
+    },
+    "id": {
+      "type": "string"
+    },
+    "server": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "models": {
+          "type": "object"
+        }
+      }
+    },
+    "session_token": {
+      "type": "string"
+    }
+  }
+}

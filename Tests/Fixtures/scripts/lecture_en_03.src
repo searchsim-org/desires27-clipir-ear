@@ -1,0 +1,37 @@
+# voices: A=Daniel B=Tessa
+A: Welcome, everyone, to today's session on coral reefs and why they matter so much.
+A: Reefs look enormous when you swim over them, but they are rare on a global scale.
+A: Coral reefs cover less than one percent of the ocean floor, yet they shelter about a quarter of all marine species. ## fact=reefs cover less than one percent of the ocean floor ## q=What did the speaker just say about how much of the ocean floor reefs cover? ## must=one percent|1%|1 percent
+A: That imbalance is exactly why their decline worries biologists.
+B: Let me explain what a coral actually is, because it surprises most students.
+B: A coral is an animal, a colony of tiny polyps that build a skeleton of limestone.
+B: The tiny algae living inside the coral tissue give corals their colour and most of their food. ## fact=algae inside the coral give corals their colour ## q=What did the speaker just say about the algae? ## must=colour|color
+B: When the water gets too warm, the coral expels those algae and turns white.
+B: That is what we call bleaching.
+B: A bleached coral is not dead yet, but it is starving, and the clock is ticking.
+B: From a boat, a bleached reef looks almost like snow on the sea bed.
+B: Photographs from the air are now one of the fastest ways to map the damage.
+A: So how warm is too warm? Less than you might think.
+A: Bleaching starts when the water stays about one degree above the usual summer maximum for several weeks. ## fact=bleaching starts at about one degree above the summer maximum ## q=What did the speaker just say about when bleaching starts? ## must=one degree|1 degree
+A: A single hot summer can bleach a reef that is hundreds of years old.
+A: Some corals recover if the heat passes quickly, others starve and die.
+B: Recovery is possible, and we have watched it happen.
+B: After the last major bleaching event, our study reef recovered in about a decade. ## fact=study reef recovered in about a decade ## q=What did the speaker just say about the reef recovery? ## must=decade|ten years|10 years
+B: Fast growing branching corals came back first, and the slow massive corals followed later.
+B: But if the hot summers come every few years, there is no time to recover at all.
+A: Now a word about the fish, because reefs are not only coral.
+A: Parrotfish scrape algae off the rock, and in doing so they grind up coral and produce sand. ## fact=parrotfish produce sand ## q=What did the speaker just say about parrotfish? ## must=sand
+A: A large parrotfish can make hundreds of kilograms of sand every year.
+A: Many white beaches in the tropics are, quite literally, made by fish.
+B: Let me describe how we collect our data.
+B: Our dive surveys are done at a depth of fifteen metres, along fixed lines on the reef. ## fact=dive surveys at a depth of fifteen metres ## q=What did the speaker just say about the dive surveys? ## must=fifteen|15
+B: Divers photograph every square metre, and software counts the living coral later.
+B: We also have sensor buoys that send temperature data every thirty minutes. ## fact=sensor buoys send data every thirty minutes ## q=What did the speaker just say about the sensor buoys? ## must=thirty|30
+B: Tissue samples go back to the lab, where they are stored at minus eighty degrees. ## fact=samples stored at minus eighty degrees ## q=What did the speaker just say about the tissue samples? ## must=eighty|80
+A: Some of you will join the field season next spring.
+A: The research vessel is named Albatross, and it sleeps twelve people in rather small cabins. ## fact=the research vessel is named Albatross ## q=What did the speaker just say about the research vessel? ## must=Albatross
+A: Seasickness tablets are strongly recommended for the first two days.
+B: Finally, the assessment.
+B: The exam at the end of term will be open book, so focus on understanding rather than memorising. ## fact=the exam will be open book ## q=What did the speaker just say about the exam? ## must=open book|open-book
+B: Bring your notes, your field data, and a calculator.
+A: That is everything for today, thank you for listening.

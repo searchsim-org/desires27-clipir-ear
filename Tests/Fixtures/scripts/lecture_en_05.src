@@ -1,0 +1,41 @@
+# voices: A=Karen B=Daniel
+A: Good afternoon, and welcome to the lecture on renewable energy and storage.
+A: Today we look at one community that is trying to run almost entirely on wind and sun.
+A: The pilot project runs on an island in the North Sea, with about three thousand residents. ## fact=pilot project runs on an island in the North Sea ## q=What did the speaker just say about where the pilot project runs? ## must=north sea|island
+A: Being an island makes it a perfect test, because every unit of energy has to be accounted for.
+A: Until recently the island relied on an old diesel generator and an undersea cable to the mainland.
+A: The cable is ageing, and replacing it would cost more than the whole renewable project.
+A: So the residents voted to see how far they could get on their own.
+B: Let us start with generation.
+B: The solar farm on the island produces about forty megawatts at its peak on a clear summer day. ## fact=solar farm produces about forty megawatts at peak ## q=What did the speaker just say about the solar farm? ## must=forty|40
+B: In winter that drops to a small fraction, so solar alone is never enough.
+B: The island also has six wind turbines along the western cliffs.
+B: The turbines are switched off when the wind speed rises above twenty five metres per second. ## fact=turbines switched off above twenty five metres per second ## q=What did the speaker just say about when the turbines are switched off? ## must=twenty five|25|twenty-five
+B: That protects the blades during storms, which are common in autumn.
+B: On a typical day, wind and solar together cover most of the demand.
+B: The difficult days are calm, grey days in the middle of winter.
+B: Engineers call those periods dark doldrums, and every storage plan is built around them.
+A: Generation is only half the story, the other half is storage.
+A: The main battery uses lithium iron phosphate cells, which are safer and last longer than older chemistries. ## fact=battery uses lithium iron phosphate cells ## q=What did the speaker just say about the battery? ## must=phosphate
+A: It can supply the whole island for about four hours.
+A: For longer gaps, the team experimented with green hydrogen.
+A: Turning electricity into hydrogen and back again loses about a third of the energy along the way. ## fact=hydrogen round trip loses about a third of the energy ## q=What did the speaker just say about green hydrogen? ## must=third
+B: Even so, worldwide, pumped hydro is still the largest form of energy storage by far. ## fact=pumped hydro is the largest form of storage ## q=What did the speaker just say about the largest form of energy storage? ## must=pumped hydro|hydro
+B: You pump water uphill when power is cheap and let it run down through turbines when it is needed.
+B: The island has no mountains, so that option was never on the table.
+A: Now to demand, which is where the residents come in.
+A: Most homes replaced their oil boilers with heat pumps over the last five years.
+A: A heat pump moves about three units of heat for every unit of electricity it uses. ## fact=heat pump moves about three units of heat per unit of electricity ## q=What did the speaker just say about heat pumps? ## must=three|3
+A: That makes electric heating far cheaper than it first appears.
+A: Many residents also charge their cars at night, when the wind is often strongest.
+A: A simple price signal tells their chargers when electricity is plentiful.
+A: Shifting demand like this turned out to be cheaper than adding more batteries.
+B: One more technical detail, because it matters for the grid.
+B: The grid frequency in Europe is fifty hertz, and it must stay very close to that value. ## fact=grid frequency in Europe is fifty hertz ## q=What did the speaker just say about the grid frequency? ## must=fifty|50
+B: The battery helps here too, because it can respond in a fraction of a second.
+A: Before we finish, your tasks for this week.
+A: The homework is to estimate your own household's yearly electricity consumption from your bills. ## fact=homework is to estimate household yearly consumption ## q=What did the speaker just say about the homework? ## must=household|consumption
+A: Bring the number to the seminar, we will compare them.
+B: And a reminder about the essay competition.
+B: The prize this year is a visit to a geothermal plant in Iceland. ## fact=essay prize is a visit to a geothermal plant in Iceland ## q=What did the speaker just say about the essay competition prize? ## must=iceland|geothermal
+A: Thank you all, and see you next week.

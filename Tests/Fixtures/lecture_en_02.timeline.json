@@ -1,0 +1,218 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 4.225,
+    "speaker": "Karen",
+    "text": "Hello and welcome to the third lecture on the history of bridge engineering."
+  },
+  {
+    "t0": 4.825,
+    "t1": 10.843,
+    "speaker": "Karen",
+    "text": "Today we follow one river crossing through nine centuries, from stone arches to modern suspension bridges."
+  },
+  {
+    "t0": 11.443,
+    "t1": 16.905,
+    "speaker": "Karen",
+    "text": "Our case study is a crossing over a tidal estuary, which makes every design decision harder."
+  },
+  {
+    "t0": 17.505,
+    "t1": 22.037,
+    "speaker": "Karen",
+    "text": "The water level changes by several metres twice a day, and the currents are strong."
+  },
+  {
+    "t0": 23.037,
+    "t1": 27.67,
+    "speaker": "Rishi",
+    "text": "Let us begin with the oldest structure, because parts of it still stand."
+  },
+  {
+    "t0": 28.27,
+    "t1": 33.236,
+    "speaker": "Rishi",
+    "text": "The oldest stone bridge still in use in the region was built in the year eleven forty."
+  },
+  {
+    "t0": 33.836,
+    "t1": 39.558,
+    "speaker": "Rishi",
+    "text": "It has seven small arches, and each pier sits on a bed of timber piles driven into the mud."
+  },
+  {
+    "t0": 40.158,
+    "t1": 44.532,
+    "speaker": "Rishi",
+    "text": "Those timber piles survived because they stayed wet and away from oxygen."
+  },
+  {
+    "t0": 45.132,
+    "t1": 50.043,
+    "speaker": "Rishi",
+    "text": "When the river was dredged in the nineteenth century, two of the piers began to settle."
+  },
+  {
+    "t0": 51.043,
+    "t1": 53.822,
+    "speaker": "Karen",
+    "text": "The next big change came with iron and then steel."
+  },
+  {
+    "t0": 54.422,
+    "t1": 58.818,
+    "speaker": "Karen",
+    "text": "Iron allowed longer spans, but early iron bridges were brittle in cold weather."
+  },
+  {
+    "t0": 59.418,
+    "t1": 62.534,
+    "speaker": "Karen",
+    "text": "Steel solved much of that, yet it brought its own problem."
+  },
+  {
+    "t0": 63.134,
+    "t1": 68.351,
+    "speaker": "Karen",
+    "text": "The biggest enemy of steel bridges is corrosion, and most of it is caused by road salt in winter."
+  },
+  {
+    "t0": 68.951,
+    "t1": 71.95,
+    "speaker": "Karen",
+    "text": "Salt water runs into the joints and sits there for months."
+  },
+  {
+    "t0": 72.95,
+    "t1": 77.452,
+    "speaker": "Rishi",
+    "text": "Then came the material that changed everything, reinforced concrete."
+  },
+  {
+    "t0": 78.052,
+    "t1": 83.481,
+    "speaker": "Rishi",
+    "text": "Concrete is strong when squeezed and weak when stretched, so steel bars carry the tension."
+  },
+  {
+    "t0": 84.081,
+    "t1": 89.617,
+    "speaker": "Rishi",
+    "text": "It is cheap, it can be poured into almost any shape, and it does not need painting."
+  },
+  {
+    "t0": 90.217,
+    "t1": 94.069,
+    "speaker": "Rishi",
+    "text": "Most of the short bridges you drive over every day are built this way."
+  },
+  {
+    "t0": 94.669,
+    "t1": 100.744,
+    "speaker": "Rishi",
+    "text": "Even so, concrete cracks with time, and water in those cracks slowly attacks the steel inside."
+  },
+  {
+    "t0": 101.744,
+    "t1": 106.715,
+    "speaker": "Karen",
+    "text": "Now to the star of the case study, the suspension bridge that opened in the nineteen sixties."
+  },
+  {
+    "t0": 107.315,
+    "t1": 111.222,
+    "speaker": "Karen",
+    "text": "It has a main span of one thousand two hundred metres between the towers."
+  },
+  {
+    "t0": 111.822,
+    "t1": 116.099,
+    "speaker": "Karen",
+    "text": "The two main cables are spun on site from thousands of individual steel wires."
+  },
+  {
+    "t0": 116.699,
+    "t1": 119.257,
+    "speaker": "Karen",
+    "text": "Spinning the cables alone took almost a year."
+  },
+  {
+    "t0": 120.257,
+    "t1": 125.481,
+    "speaker": "Rishi",
+    "text": "Long, light decks have a dangerous habit, they can start to oscillate in the wind."
+  },
+  {
+    "t0": 126.081,
+    "t1": 131.807,
+    "speaker": "Rishi",
+    "text": "After wind tunnel testing, the engineers added slots along the deck to let the air pass through."
+  },
+  {
+    "t0": 132.407,
+    "t1": 136.63,
+    "speaker": "Rishi",
+    "text": "Those slots break up the vortices that would otherwise make the deck swing."
+  },
+  {
+    "t0": 137.23,
+    "t1": 141.059,
+    "speaker": "Rishi",
+    "text": "The same idea appears in almost every long span built since."
+  },
+  {
+    "t0": 142.059,
+    "t1": 144.769,
+    "speaker": "Karen",
+    "text": "Keeping a bridge like this alive is a full time job."
+  },
+  {
+    "t0": 145.369,
+    "t1": 150.098,
+    "speaker": "Karen",
+    "text": "Today it carries more than three hundred strain gauges that report how the steel is stretching."
+  },
+  {
+    "t0": 150.698,
+    "t1": 156.104,
+    "speaker": "Karen",
+    "text": "Engineers also climb the cables in person, and a full inspection happens every six years."
+  },
+  {
+    "t0": 156.704,
+    "t1": 160.665,
+    "speaker": "Karen",
+    "text": "Between inspections, the sensor data tells them where to look first."
+  },
+  {
+    "t0": 161.665,
+    "t1": 164.101,
+    "speaker": "Rishi",
+    "text": "A few practical points before we stop."
+  },
+  {
+    "t0": 164.701,
+    "t1": 169.61,
+    "speaker": "Rishi",
+    "text": "The field trip to the bridge is on Wednesday morning, and we meet at the train station."
+  },
+  {
+    "t0": 170.21,
+    "t1": 174.831,
+    "speaker": "Rishi",
+    "text": "Wear sturdy shoes and bring a warm jacket, it is always windy on the deck."
+  },
+  {
+    "t0": 175.831,
+    "t1": 179.907,
+    "speaker": "Karen",
+    "text": "And the reading for next week is chapter seven, on cable stayed bridges."
+  },
+  {
+    "t0": 180.507,
+    "t1": 182.755,
+    "speaker": "Karen",
+    "text": "Thank you, and see you at the station."
+  }
+]

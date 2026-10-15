@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/answer.done",
+  "title": "answer.done",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "prompt_tokens",
+    "completion_tokens",
+    "model",
+    "latency"
+  ],
+  "properties": {
+    "t": {
+      "const": "answer.done"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "prompt_tokens": {
+      "type": "integer"
+    },
+    "completion_tokens": {
+      "type": "integer"
+    },
+    "model": {
+      "type": "string"
+    },
+    "latency": {
+      "type": "object"
+    },
+    "knowledge_tier": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    }
+  }
+}

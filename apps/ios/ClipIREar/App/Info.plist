@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>ClipIR Ear</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>ClipIR Ear connects to your Bluetooth pendant to capture audio. Audio never leaves your devices.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_clipir-ear._tcp</string>
+	</array>
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+	<string>ClipIR Ear adds calendar events you approve by voice.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera scans the pairing code shown by earbridge on your Mac. Nothing is recorded.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>ClipIR Ear connects to the earbridge service on your own Mac, nothing else.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>ClipIR Ear listens through the microphone to keep a short transcript on this phone. Audio never leaves your devices.</string>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>ClipIR Ear creates reminders you approve by voice. It never reads others.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>bluetooth-central</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

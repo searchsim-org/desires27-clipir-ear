@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/ping",
+  "title": "ping",
+  "type": "object",
+  "required": [
+    "t",
+    "ts"
+  ],
+  "properties": {
+    "t": {
+      "const": "ping"
+    },
+    "id": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "number"
+    }
+  }
+}

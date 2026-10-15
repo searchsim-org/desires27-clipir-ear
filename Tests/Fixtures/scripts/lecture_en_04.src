@@ -1,0 +1,42 @@
+# voices: A=Samantha B=Rishi
+A: Welcome to the software project course, and thank you for coming to the first session.
+A: This term you will build a real application for a real client, from the first interview to the final demo.
+A: The client for this year's project is the city library, and they need a new system for room bookings. ## fact=the client is the city library ## q=What did the speaker just say about the client? ## must=library
+A: They will join us twice during the term to review what you have built.
+B: Let me go through how the teams work.
+B: You will work in teams of four students, and we form the teams by the end of this week. ## fact=teams of four students ## q=What did the speaker just say about the teams? ## must=four|4
+B: Each team chooses a team lead, but the role rotates every three weeks.
+B: That way everyone gets some practice at planning and at saying no.
+B: In the first two weeks you will interview the librarians and write down what they actually need.
+B: Do not start coding before you understand the problem, it is the most common mistake we see.
+B: Write the requirements as short user stories, and check each one with the client.
+A: Now the tools, which are not optional.
+A: All code must live in the university GitLab, not on personal accounts. ## fact=all code must live in the university GitLab ## q=What did the speaker just say about where the code must live? ## must=gitlab|git lab
+A: We look at the commit history when we grade, so commit early and commit often.
+A: Every change needs approval from two teammates before it is merged. ## fact=every change needs approval from two teammates ## q=What did the speaker just say about approving changes? ## must=two|2
+A: Reviews are where most of the learning happens, so take them seriously.
+B: On testing, we have a simple rule.
+B: The target for automated test coverage is seventy percent of the code. ## fact=test coverage target is seventy percent ## q=What did the speaker just say about test coverage? ## must=seventy|70
+B: Coverage is not quality, but a project with no tests is not finished.
+B: We will show you how to run the tests automatically on every push.
+A: Next, the rhythm of the week.
+A: There is a short stand up meeting every Monday at nine, and it takes fifteen minutes at most. ## fact=stand up meeting every Monday at nine ## q=What did the speaker just say about the stand up meeting? ## must=Monday
+A: Each person says what they did, what they will do next, and what is blocking them.
+A: If something is blocking you for more than a day, tell us, do not wait for the meeting.
+A: Keep a shared board with all open tasks, and move each card when its status changes.
+A: We will look at the board during the weekly meetings, so keep it honest.
+A: A board full of cards marked almost done usually means nothing is done at all.
+B: Some practical matters about money.
+B: Each team gets a budget of five hundred euros for hardware, such as tablets for testing. ## fact=hardware budget of five hundred euros per team ## q=What did the speaker just say about the budget? ## must=500|five hundred
+B: Keep the receipts, the finance office is very strict about them.
+A: Now the important dates.
+A: Demo day is on December the third, in the main hall, and the client will be in the audience. ## fact=demo day is on December the third ## q=What did the speaker just say about demo day? ## must=December
+A: Each team gets ten minutes to present and five minutes for questions.
+A: Rehearse the demo at least twice, and always have a backup video in case the network fails.
+A: Show the client the thing they asked for first, and the clever extras afterwards.
+A: Every member of the team should speak during the presentation.
+B: After the demo you hand in a written report.
+B: The final report is limited to twenty pages, including figures. ## fact=final report limited to twenty pages ## q=What did the speaker just say about the final report? ## must=twenty|20
+B: Shorter is fine, and clearer is always better.
+B: Late submissions lose five percent of the mark for every day they are late. ## fact=late submissions lose five percent per day ## q=What did the speaker just say about late submissions? ## must=five percent|5%|5 percent
+A: That is the overview, now let us take your questions.

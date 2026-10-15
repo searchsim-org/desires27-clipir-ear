@@ -1,0 +1,200 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 4.812,
+    "speaker": "Samantha",
+    "text": "Okay, let's get started, we have a lot to cover and only thirty minutes."
+  },
+  {
+    "t0": 5.412,
+    "t1": 8.467,
+    "speaker": "Samantha",
+    "text": "First item is the release plan for the new version of the app."
+  },
+  {
+    "t0": 9.067,
+    "t1": 13.046,
+    "speaker": "Samantha",
+    "text": "After yesterday's review, the launch date moved to the twentieth of March."
+  },
+  {
+    "t0": 14.046,
+    "t1": 17.991,
+    "speaker": "Daniel",
+    "text": "That works for engineering, but only if we fix the crash first."
+  },
+  {
+    "t0": 18.991,
+    "t1": 21.308,
+    "speaker": "Samantha",
+    "text": "Right, can you give us an update on that?"
+  },
+  {
+    "t0": 22.308,
+    "t1": 27.893,
+    "speaker": "Daniel",
+    "text": "Sure. The crash happens only on older tablets, when the app is resumed from the background."
+  },
+  {
+    "t0": 28.493,
+    "t1": 32.722,
+    "speaker": "Daniel",
+    "text": "We can reproduce it now, and I expect a fix by the end of the week."
+  },
+  {
+    "t0": 33.722,
+    "t1": 35.307,
+    "speaker": "Karen",
+    "text": "Is it affecting many users?"
+  },
+  {
+    "t0": 36.307,
+    "t1": 41.013,
+    "speaker": "Daniel",
+    "text": "About two percent of sessions, mostly in schools that use older devices."
+  },
+  {
+    "t0": 42.013,
+    "t1": 44.682,
+    "speaker": "Karen",
+    "text": "Then we should mention it in the release notes either way."
+  },
+  {
+    "t0": 45.682,
+    "t1": 49.371,
+    "speaker": "Samantha",
+    "text": "Agreed. Next, the feature everyone keeps asking about."
+  },
+  {
+    "t0": 49.971,
+    "t1": 55.418,
+    "speaker": "Samantha",
+    "text": "We are going to call the new feature Quick Share, and it lets people send a list to a friend in one tap."
+  },
+  {
+    "t0": 56.418,
+    "t1": 59.789,
+    "speaker": "Karen",
+    "text": "Marketing likes the name, so no objections from us."
+  },
+  {
+    "t0": 60.389,
+    "t1": 62.705,
+    "speaker": "Karen",
+    "text": "But I have some less good news about our side."
+  },
+  {
+    "t0": 63.305,
+    "t1": 67.013,
+    "speaker": "Karen",
+    "text": "The marketing budget for the spring campaign is cut by fifteen percent."
+  },
+  {
+    "t0": 67.612,
+    "t1": 71.331,
+    "speaker": "Karen",
+    "text": "So we will focus on social media and drop the printed posters."
+  },
+  {
+    "t0": 72.331,
+    "t1": 74.442,
+    "speaker": "Samantha",
+    "text": "That is a shame, but it makes sense."
+  },
+  {
+    "t0": 75.442,
+    "t1": 81.042,
+    "speaker": "Daniel",
+    "text": "On the infrastructure side, the backend migration to the new database finishes next Tuesday."
+  },
+  {
+    "t0": 81.642,
+    "t1": 85.194,
+    "speaker": "Daniel",
+    "text": "There will be a short maintenance window at night, around one hour."
+  },
+  {
+    "t0": 86.194,
+    "t1": 89.176,
+    "speaker": "Samantha",
+    "text": "Please post the exact time in the channel once you know it."
+  },
+  {
+    "t0": 90.176,
+    "t1": 96.111,
+    "speaker": "Daniel",
+    "text": "Will do. And one good number to share, page load time is now one point two seconds on average."
+  },
+  {
+    "t0": 97.111,
+    "t1": 100.084,
+    "speaker": "Karen",
+    "text": "That is a big improvement, we can use it in the campaign."
+  },
+  {
+    "t0": 100.684,
+    "t1": 103.339,
+    "speaker": "Karen",
+    "text": "We also finished the user survey last week."
+  },
+  {
+    "t0": 103.939,
+    "t1": 107.646,
+    "speaker": "Karen",
+    "text": "The feature people want most is a dark mode, by a wide margin."
+  },
+  {
+    "t0": 108.646,
+    "t1": 111.662,
+    "speaker": "Samantha",
+    "text": "Interesting, let's put that on the roadmap for the summer."
+  },
+  {
+    "t0": 112.262,
+    "t1": 115.704,
+    "speaker": "Samantha",
+    "text": "On staffing, we will hire two more designers in January."
+  },
+  {
+    "t0": 116.305,
+    "t1": 120.589,
+    "speaker": "Samantha",
+    "text": "The job posts go out next week, so please share them with anyone you know."
+  },
+  {
+    "t0": 121.589,
+    "t1": 125.95,
+    "speaker": "Karen",
+    "text": "One more thing from me, the customer advisory board meets in Lisbon this year."
+  },
+  {
+    "t0": 126.55,
+    "t1": 129.844,
+    "speaker": "Karen",
+    "text": "Two of us will travel, and we will report back afterwards."
+  },
+  {
+    "t0": 130.844,
+    "t1": 136.393,
+    "speaker": "Samantha",
+    "text": "Great. Last point, the next meeting is moved to Thursday afternoon because of the public holiday."
+  },
+  {
+    "t0": 137.393,
+    "t1": 138.985,
+    "speaker": "Daniel",
+    "text": "Thursday is fine for me."
+  },
+  {
+    "t0": 139.985,
+    "t1": 140.679,
+    "speaker": "Karen",
+    "text": "For me too."
+  },
+  {
+    "t0": 141.679,
+    "t1": 144.765,
+    "speaker": "Samantha",
+    "text": "Perfect, thanks everyone, that's all for today."
+  }
+]

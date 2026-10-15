@@ -1,0 +1,242 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 4.787,
+    "speaker": "Karen",
+    "text": "Good afternoon, and welcome to the lecture on renewable energy and storage."
+  },
+  {
+    "t0": 5.387,
+    "t1": 10.012,
+    "speaker": "Karen",
+    "text": "Today we look at one community that is trying to run almost entirely on wind and sun."
+  },
+  {
+    "t0": 10.612,
+    "t1": 15.469,
+    "speaker": "Karen",
+    "text": "The pilot project runs on an island in the North Sea, with about three thousand residents."
+  },
+  {
+    "t0": 16.069,
+    "t1": 21.291,
+    "speaker": "Karen",
+    "text": "Being an island makes it a perfect test, because every unit of energy has to be accounted for."
+  },
+  {
+    "t0": 21.891,
+    "t1": 26.984,
+    "speaker": "Karen",
+    "text": "Until recently the island relied on an old diesel generator and an undersea cable to the mainland."
+  },
+  {
+    "t0": 27.584,
+    "t1": 32.209,
+    "speaker": "Karen",
+    "text": "The cable is ageing, and replacing it would cost more than the whole renewable project."
+  },
+  {
+    "t0": 32.809,
+    "t1": 36.33,
+    "speaker": "Karen",
+    "text": "So the residents voted to see how far they could get on their own."
+  },
+  {
+    "t0": 37.33,
+    "t1": 39.132,
+    "speaker": "Daniel",
+    "text": "Let us start with generation."
+  },
+  {
+    "t0": 39.732,
+    "t1": 45.001,
+    "speaker": "Daniel",
+    "text": "The solar farm on the island produces about forty megawatts at its peak on a clear summer day."
+  },
+  {
+    "t0": 45.601,
+    "t1": 49.934,
+    "speaker": "Daniel",
+    "text": "In winter that drops to a small fraction, so solar alone is never enough."
+  },
+  {
+    "t0": 50.534,
+    "t1": 54.201,
+    "speaker": "Daniel",
+    "text": "The island also has six wind turbines along the western cliffs."
+  },
+  {
+    "t0": 54.801,
+    "t1": 59.745,
+    "speaker": "Daniel",
+    "text": "The turbines are switched off when the wind speed rises above twenty five metres per second."
+  },
+  {
+    "t0": 60.345,
+    "t1": 64.266,
+    "speaker": "Daniel",
+    "text": "That protects the blades during storms, which are common in autumn."
+  },
+  {
+    "t0": 64.866,
+    "t1": 68.852,
+    "speaker": "Daniel",
+    "text": "On a typical day, wind and solar together cover most of the demand."
+  },
+  {
+    "t0": 69.452,
+    "t1": 72.923,
+    "speaker": "Daniel",
+    "text": "The difficult days are calm, grey days in the middle of winter."
+  },
+  {
+    "t0": 73.523,
+    "t1": 78.809,
+    "speaker": "Daniel",
+    "text": "Engineers call those periods dark doldrums, and every storage plan is built around them."
+  },
+  {
+    "t0": 79.809,
+    "t1": 83.55,
+    "speaker": "Karen",
+    "text": "Generation is only half the story, the other half is storage."
+  },
+  {
+    "t0": 84.15,
+    "t1": 90.215,
+    "speaker": "Karen",
+    "text": "The main battery uses lithium iron phosphate cells, which are safer and last longer than older chemistries."
+  },
+  {
+    "t0": 90.814,
+    "t1": 93.559,
+    "speaker": "Karen",
+    "text": "It can supply the whole island for about four hours."
+  },
+  {
+    "t0": 94.159,
+    "t1": 97.743,
+    "speaker": "Karen",
+    "text": "For longer gaps, the team experimented with green hydrogen."
+  },
+  {
+    "t0": 98.343,
+    "t1": 103.391,
+    "speaker": "Karen",
+    "text": "Turning electricity into hydrogen and back again loses about a third of the energy along the way."
+  },
+  {
+    "t0": 104.391,
+    "t1": 110.145,
+    "speaker": "Daniel",
+    "text": "Even so, worldwide, pumped hydro is still the largest form of energy storage by far."
+  },
+  {
+    "t0": 110.745,
+    "t1": 115.786,
+    "speaker": "Daniel",
+    "text": "You pump water uphill when power is cheap and let it run down through turbines when it is needed."
+  },
+  {
+    "t0": 116.386,
+    "t1": 120.238,
+    "speaker": "Daniel",
+    "text": "The island has no mountains, so that option was never on the table."
+  },
+  {
+    "t0": 121.238,
+    "t1": 124.225,
+    "speaker": "Karen",
+    "text": "Now to demand, which is where the residents come in."
+  },
+  {
+    "t0": 124.826,
+    "t1": 129.105,
+    "speaker": "Karen",
+    "text": "Most homes replaced their oil boilers with heat pumps over the last five years."
+  },
+  {
+    "t0": 129.704,
+    "t1": 134.24,
+    "speaker": "Karen",
+    "text": "A heat pump moves about three units of heat for every unit of electricity it uses."
+  },
+  {
+    "t0": 134.84,
+    "t1": 138.09,
+    "speaker": "Karen",
+    "text": "That makes electric heating far cheaper than it first appears."
+  },
+  {
+    "t0": 138.69,
+    "t1": 143.306,
+    "speaker": "Karen",
+    "text": "Many residents also charge their cars at night, when the wind is often strongest."
+  },
+  {
+    "t0": 143.906,
+    "t1": 147.909,
+    "speaker": "Karen",
+    "text": "A simple price signal tells their chargers when electricity is plentiful."
+  },
+  {
+    "t0": 148.509,
+    "t1": 152.301,
+    "speaker": "Karen",
+    "text": "Shifting demand like this turned out to be cheaper than adding more batteries."
+  },
+  {
+    "t0": 153.301,
+    "t1": 156.682,
+    "speaker": "Daniel",
+    "text": "One more technical detail, because it matters for the grid."
+  },
+  {
+    "t0": 157.282,
+    "t1": 162.657,
+    "speaker": "Daniel",
+    "text": "The grid frequency in Europe is fifty hertz, and it must stay very close to that value."
+  },
+  {
+    "t0": 163.257,
+    "t1": 167.762,
+    "speaker": "Daniel",
+    "text": "The battery helps here too, because it can respond in a fraction of a second."
+  },
+  {
+    "t0": 168.762,
+    "t1": 171.272,
+    "speaker": "Karen",
+    "text": "Before we finish, your tasks for this week."
+  },
+  {
+    "t0": 171.872,
+    "t1": 176.903,
+    "speaker": "Karen",
+    "text": "The homework is to estimate your own household's yearly electricity consumption from your bills."
+  },
+  {
+    "t0": 177.503,
+    "t1": 180.271,
+    "speaker": "Karen",
+    "text": "Bring the number to the seminar, we will compare them."
+  },
+  {
+    "t0": 181.271,
+    "t1": 183.666,
+    "speaker": "Daniel",
+    "text": "And a reminder about the essay competition."
+  },
+  {
+    "t0": 184.266,
+    "t1": 187.828,
+    "speaker": "Daniel",
+    "text": "The prize this year is a visit to a geothermal plant in Iceland."
+  },
+  {
+    "t0": 188.828,
+    "t1": 191.18,
+    "speaker": "Karen",
+    "text": "Thank you all, and see you next week."
+  }
+]

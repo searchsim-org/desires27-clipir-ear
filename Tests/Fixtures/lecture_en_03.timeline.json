@@ -1,0 +1,218 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 5.75,
+    "speaker": "Daniel",
+    "text": "Welcome, everyone, to today's session on coral reefs and why they matter so much."
+  },
+  {
+    "t0": 6.35,
+    "t1": 10.764,
+    "speaker": "Daniel",
+    "text": "Reefs look enormous when you swim over them, but they are rare on a global scale."
+  },
+  {
+    "t0": 11.364,
+    "t1": 18.123,
+    "speaker": "Daniel",
+    "text": "Coral reefs cover less than one percent of the ocean floor, yet they shelter about a quarter of all marine species."
+  },
+  {
+    "t0": 18.723,
+    "t1": 22.564,
+    "speaker": "Daniel",
+    "text": "That imbalance is exactly why their decline worries biologists."
+  },
+  {
+    "t0": 23.564,
+    "t1": 28.748,
+    "speaker": "Tessa",
+    "text": "Let me explain what a coral actually is, because it surprises most students."
+  },
+  {
+    "t0": 29.348,
+    "t1": 34.604,
+    "speaker": "Tessa",
+    "text": "A coral is an animal, a colony of tiny polyps that build a skeleton of limestone."
+  },
+  {
+    "t0": 35.204,
+    "t1": 40.542,
+    "speaker": "Tessa",
+    "text": "The tiny algae living inside the coral tissue give corals their colour and most of their food."
+  },
+  {
+    "t0": 41.142,
+    "t1": 46.044,
+    "speaker": "Tessa",
+    "text": "When the water gets too warm, the coral expels those algae and turns white."
+  },
+  {
+    "t0": 46.644,
+    "t1": 48.572,
+    "speaker": "Tessa",
+    "text": "That is what we call bleaching."
+  },
+  {
+    "t0": 49.172,
+    "t1": 54.162,
+    "speaker": "Tessa",
+    "text": "A bleached coral is not dead yet, but it is starving, and the clock is ticking."
+  },
+  {
+    "t0": 54.762,
+    "t1": 59.014,
+    "speaker": "Tessa",
+    "text": "From a boat, a bleached reef looks almost like snow on the sea bed."
+  },
+  {
+    "t0": 59.614,
+    "t1": 64.075,
+    "speaker": "Tessa",
+    "text": "Photographs from the air are now one of the fastest ways to map the damage."
+  },
+  {
+    "t0": 65.075,
+    "t1": 68.279,
+    "speaker": "Daniel",
+    "text": "So how warm is too warm? Less than you might think."
+  },
+  {
+    "t0": 68.879,
+    "t1": 74.71,
+    "speaker": "Daniel",
+    "text": "Bleaching starts when the water stays about one degree above the usual summer maximum for several weeks."
+  },
+  {
+    "t0": 75.31,
+    "t1": 78.889,
+    "speaker": "Daniel",
+    "text": "A single hot summer can bleach a reef that is hundreds of years old."
+  },
+  {
+    "t0": 79.489,
+    "t1": 83.646,
+    "speaker": "Daniel",
+    "text": "Some corals recover if the heat passes quickly, others starve and die."
+  },
+  {
+    "t0": 84.646,
+    "t1": 87.94,
+    "speaker": "Tessa",
+    "text": "Recovery is possible, and we have watched it happen."
+  },
+  {
+    "t0": 88.54,
+    "t1": 93.669,
+    "speaker": "Tessa",
+    "text": "After the last major bleaching event, our study reef recovered in about a decade."
+  },
+  {
+    "t0": 94.269,
+    "t1": 100.204,
+    "speaker": "Tessa",
+    "text": "Fast growing branching corals came back first, and the slow massive corals followed later."
+  },
+  {
+    "t0": 100.804,
+    "t1": 105.909,
+    "speaker": "Tessa",
+    "text": "But if the hot summers come every few years, there is no time to recover at all."
+  },
+  {
+    "t0": 106.909,
+    "t1": 110.511,
+    "speaker": "Daniel",
+    "text": "Now a word about the fish, because reefs are not only coral."
+  },
+  {
+    "t0": 111.111,
+    "t1": 116.451,
+    "speaker": "Daniel",
+    "text": "Parrotfish scrape algae off the rock, and in doing so they grind up coral and produce sand."
+  },
+  {
+    "t0": 117.051,
+    "t1": 120.944,
+    "speaker": "Daniel",
+    "text": "A large parrotfish can make hundreds of kilograms of sand every year."
+  },
+  {
+    "t0": 121.544,
+    "t1": 125.889,
+    "speaker": "Daniel",
+    "text": "Many white beaches in the tropics are, quite literally, made by fish."
+  },
+  {
+    "t0": 126.889,
+    "t1": 129.762,
+    "speaker": "Tessa",
+    "text": "Let me describe how we collect our data."
+  },
+  {
+    "t0": 130.362,
+    "t1": 135.909,
+    "speaker": "Tessa",
+    "text": "Our dive surveys are done at a depth of fifteen metres, along fixed lines on the reef."
+  },
+  {
+    "t0": 136.509,
+    "t1": 141.767,
+    "speaker": "Tessa",
+    "text": "Divers photograph every square metre, and software counts the living coral later."
+  },
+  {
+    "t0": 142.367,
+    "t1": 147.061,
+    "speaker": "Tessa",
+    "text": "We also have sensor buoys that send temperature data every thirty minutes."
+  },
+  {
+    "t0": 147.661,
+    "t1": 152.759,
+    "speaker": "Tessa",
+    "text": "Tissue samples go back to the lab, where they are stored at minus eighty degrees."
+  },
+  {
+    "t0": 153.759,
+    "t1": 156.558,
+    "speaker": "Daniel",
+    "text": "Some of you will join the field season next spring."
+  },
+  {
+    "t0": 157.158,
+    "t1": 162.73,
+    "speaker": "Daniel",
+    "text": "The research vessel is named Albatross, and it sleeps twelve people in rather small cabins."
+  },
+  {
+    "t0": 163.33,
+    "t1": 167.08,
+    "speaker": "Daniel",
+    "text": "Seasickness tablets are strongly recommended for the first two days."
+  },
+  {
+    "t0": 168.08,
+    "t1": 169.882,
+    "speaker": "Tessa",
+    "text": "Finally, the assessment."
+  },
+  {
+    "t0": 170.482,
+    "t1": 176.671,
+    "speaker": "Tessa",
+    "text": "The exam at the end of term will be open book, so focus on understanding rather than memorising."
+  },
+  {
+    "t0": 177.271,
+    "t1": 181.064,
+    "speaker": "Tessa",
+    "text": "Bring your notes, your field data, and a calculator."
+  },
+  {
+    "t0": 182.064,
+    "t1": 185.15,
+    "speaker": "Daniel",
+    "text": "That is everything for today, thank you for listening."
+  }
+]

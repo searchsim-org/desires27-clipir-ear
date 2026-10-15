@@ -1,0 +1,100 @@
+[
+  {
+    "t": 16.968,
+    "fact": "the client is the city library",
+    "question": "What did the speaker just say about the client?",
+    "must_contain": [
+      "library"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 29.961,
+    "fact": "teams of four students",
+    "question": "What did the speaker just say about the teams?",
+    "must_contain": [
+      "four",
+      "4"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 65.572,
+    "fact": "all code must live in the university GitLab",
+    "question": "What did the speaker just say about where the code must live?",
+    "must_contain": [
+      "gitlab",
+      "git lab"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 74.225,
+    "fact": "every change needs approval from two teammates",
+    "question": "What did the speaker just say about approving changes?",
+    "must_contain": [
+      "two",
+      "2"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 86.927,
+    "fact": "test coverage target is seventy percent",
+    "question": "What did the speaker just say about test coverage?",
+    "must_contain": [
+      "seventy",
+      "70"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 104.643,
+    "fact": "stand up meeting every Monday at nine",
+    "question": "What did the speaker just say about the stand up meeting?",
+    "must_contain": [
+      "Monday"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 138.98,
+    "fact": "hardware budget of five hundred euros per team",
+    "question": "What did the speaker just say about the budget?",
+    "must_contain": [
+      "500",
+      "five hundred"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 151.522,
+    "fact": "demo day is on December the third",
+    "question": "What did the speaker just say about demo day?",
+    "must_contain": [
+      "December"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 178.288,
+    "fact": "final report limited to twenty pages",
+    "question": "What did the speaker just say about the final report?",
+    "must_contain": [
+      "twenty",
+      "20"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 187.005,
+    "fact": "late submissions lose five percent per day",
+    "question": "What did the speaker just say about late submissions?",
+    "must_contain": [
+      "five percent",
+      "5%",
+      "5 percent"
+    ],
+    "speaker": "Rishi"
+  }
+]

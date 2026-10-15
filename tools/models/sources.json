@@ -1,0 +1,324 @@
+{
+  "_comment": "Model download manifest for tools/models/download.py (make models) and the in-app ModelDownloader. Pins from docs/research/pins-2026-10-15.md. sha256 null = not published upstream; recorded on first download into models.lock.json and enforced afterwards. default=false entries download only when named: make models ONLY=<id>.",
+  "allowed_hosts": [
+    "huggingface.co",
+    "cdn-lfs.huggingface.co",
+    "cdn-lfs-us-1.huggingface.co",
+    "github.com",
+    "objects.githubusercontent.com",
+    "release-assets.githubusercontent.com",
+    "cdn.hf.co"
+  ],
+  "models": [
+    {
+      "id": "silero-vad-v5",
+      "dir": "silero-vad",
+      "purpose": "vad",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad_v5.onnx",
+      "sha256": null,
+      "size": 2313101,
+      "licence": "MIT",
+      "default": true
+    },
+    {
+      "id": "zipformer-en-encoder",
+      "dir": "zipformer-en-2023-06-26",
+      "purpose": "asr-en-small",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26/resolve/672fbf1b30579d6585301139bb363f42a0ad4a24/encoder-epoch-99-avg-1-chunk-16-left-128.int8.onnx",
+      "sha256": "563fde436d16cf7607cf408cd6b30909819d03162652ef389c2450ced3f45ac1",
+      "size": 71083163,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "zipformer-en-decoder",
+      "dir": "zipformer-en-2023-06-26",
+      "purpose": "asr-en-small",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26/resolve/672fbf1b30579d6585301139bb363f42a0ad4a24/decoder-epoch-99-avg-1-chunk-16-left-128.int8.onnx",
+      "sha256": "98da299f471e38bb4e1a8df579b8cc9122d6039576a77e357b3c60f17dd83b02",
+      "size": 1307236,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "zipformer-en-joiner",
+      "dir": "zipformer-en-2023-06-26",
+      "purpose": "asr-en-small",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26/resolve/672fbf1b30579d6585301139bb363f42a0ad4a24/joiner-epoch-99-avg-1-chunk-16-left-128.int8.onnx",
+      "sha256": "d944208d660d67c8d72cd2acaeac971fa5ceb8c80e76c1968148846fedd6e297",
+      "size": 259335,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "zipformer-en-tokens",
+      "dir": "zipformer-en-2023-06-26",
+      "purpose": "asr-en-small",
+      "url": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26/resolve/672fbf1b30579d6585301139bb363f42a0ad4a24/tokens.txt",
+      "sha256": null,
+      "size": 5048,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "nemotron-en-0.6b-160ms-int8",
+      "dir": "nemotron-en",
+      "purpose": "asr-en-large",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemotron-speech-streaming-en-0.6b-160ms-int8-2026-04-25.tar.bz2",
+      "sha256": "0ae73a41cd51599dc7cac9ac083d9d35de53d762ca45923505fde47a3751814b",
+      "size": 463945198,
+      "licence": "OpenMDW-1.1",
+      "default": false
+    },
+    {
+      "id": "eres2net-sv-en-voxceleb",
+      "dir": "speaker",
+      "purpose": "speaker-embedding",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_sv_en_voxceleb_16k.onnx",
+      "sha256": "c59158379255ad66e161679cca6af8d52d51e389e3224ab7d7a7baae295c2db5",
+      "size": 26485263,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "nomic-embed-text-v1.5-q8",
+      "dir": "embed",
+      "purpose": "embeddings",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/resolve/0188c9bf409793f810680a5a431e7b899c46104c/nomic-embed-text-v1.5.Q8_0.gguf",
+      "sha256": "3e24342164b3d94991ba9692fdc0dd08e3fd7362e0aacc396a9a5c54a544c3b7",
+      "size": 146146432,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "gemma-4-e2b-it-q4_0",
+      "dir": "llm",
+      "purpose": "llm-phone-candidate",
+      "url": "https://huggingface.co/ggml-org/gemma-4-E2B-it-GGUF/resolve/b4243c156154b6dca9324415f8c7ccc098b4aed1/gemma-4-E2B-it-Q4_0.gguf",
+      "sha256": "8e30dff3ac4c8434c49a7036fa15564bdbb6044e42bf04550bf1a096ad7e6a52",
+      "size": 2841481184,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "qwen3-1.7b-q4_k_m",
+      "dir": "llm",
+      "purpose": "llm-phone-candidate",
+      "url": "https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/daeb8e2d528a760970442092f6bf1e55c3b659eb/Qwen3-1.7B-Q4_K_M.gguf",
+      "sha256": "d2387ca2dbfee2ffabce7120d3770dadca0b293052bc2f0e138fdc940d9bc7b5",
+      "size": 1282439264,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "qwen3-0.6b-q8_0",
+      "dir": "llm",
+      "purpose": "llm-ci",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/23749fefcc72300e3a2ad315e1317431b06b590a/Qwen3-0.6B-Q8_0.gguf",
+      "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+      "size": 639446688,
+      "licence": "Apache-2.0",
+      "default": true
+    },
+    {
+      "id": "kokoro-int8-en-v0_19",
+      "dir": "tts",
+      "purpose": "tts-mac-only (ADR-007; recheck espeak-ng at P5.1)",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-en-v0_19.tar.bz2",
+      "sha256": "c9f0dd393615805b0bab050c340834d5e684e732aec91c0e860cd30e982c08bd",
+      "size": 103248205,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "librispeech-test-clean",
+      "dir": "librispeech-test-clean",
+      "purpose": "asr-eval-data (P0.7; 20 utterances extracted by make fixtures)",
+      "url": "https://huggingface.co/datasets/openslr/librispeech_asr/resolve/2b9f39377850ffce6bf6358257ae9f84b2349497/clean/test/0000.parquet",
+      "sha256": "7113aa4c3cf963fb54697145719a7725f984c8836d1c494a554cbb9f1a017df0",
+      "size": 350452636,
+      "licence": "CC-BY-4.0",
+      "default": false
+    },
+    {
+      "id": "gemma-4-e4b-it-q4_0",
+      "dir": "llm",
+      "purpose": "llm-mac (earbridge via Ollama import, ADR-015)",
+      "url": "https://huggingface.co/ggml-org/gemma-4-E4B-it-GGUF/resolve/b8093469224f83f5c38f691eb906c380e9e63114/gemma-4-E4B-it-Q4_0.gguf",
+      "sha256": "a555b900214b477d8880e7832e0b8925e139b0159640036b09fe472b6f2097f2",
+      "size": 4590807392,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "whisper-large-v3-turbo",
+      "dir": "whisper",
+      "purpose": "asr-en-mac-offline (corpus WER evaluation)",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo.bin",
+      "sha256": "1fc70f774d38eb169993ac391eea357ef47c88757ef72ee5943879b7e8e2bc69",
+      "size": 1624555275,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-model",
+      "dir": "faster-whisper-large-v3-turbo",
+      "purpose": "asr-en-offline (CTranslate2; corpus WER evaluation on CPU)",
+      "url": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/model.bin",
+      "sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+      "size": 1617884929,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-config",
+      "dir": "faster-whisper-large-v3-turbo",
+      "purpose": "asr-en-offline (CTranslate2; corpus WER evaluation on CPU)",
+      "url": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/config.json",
+      "sha256": "b0253ea6c0d3bea6b1e19e91a02acfd3b53f4467362efcb5a3e6b16c9b3a9b7e",
+      "size": 2263,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-preprocessor-config",
+      "dir": "faster-whisper-large-v3-turbo",
+      "purpose": "asr-en-offline (CTranslate2; corpus WER evaluation on CPU)",
+      "url": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/preprocessor_config.json",
+      "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+      "size": 340,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-tokenizer",
+      "dir": "faster-whisper-large-v3-turbo",
+      "purpose": "asr-en-offline (CTranslate2; corpus WER evaluation on CPU)",
+      "url": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/tokenizer.json",
+      "sha256": "297b13372ac43916285644fb9687add3cc62ee2a1adb60da3dc25cc94c1871fd",
+      "size": 2710337,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "faster-whisper-large-v3-turbo-vocabulary",
+      "dir": "faster-whisper-large-v3-turbo",
+      "purpose": "asr-en-offline (CTranslate2; corpus WER evaluation on CPU)",
+      "url": "https://huggingface.co/mobiuslabsgmbh/faster-whisper-large-v3-turbo/resolve/0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf/vocabulary.json",
+      "sha256": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1",
+      "size": 1068114,
+      "licence": "MIT",
+      "default": false
+    },
+    {
+      "id": "ami-sdm-test-0000",
+      "dir": "ami-sdm-test",
+      "purpose": "asr-eval-data (AMI far-field SDM, eval partition)",
+      "url": "https://huggingface.co/datasets/edinburghcstr/ami/resolve/0c2aaba73353af9145afbdea75badca51196ef12/sdm/test/0000.parquet",
+      "sha256": "90eaf6b410dff4ab03a90af0ed6377c7e0947df55d08645382d4f5e36fd8a864",
+      "size": 257024744,
+      "licence": "CC-BY-4.0",
+      "default": false
+    },
+    {
+      "id": "ami-sdm-test-0001",
+      "dir": "ami-sdm-test",
+      "purpose": "asr-eval-data (AMI far-field SDM, eval partition)",
+      "url": "https://huggingface.co/datasets/edinburghcstr/ami/resolve/0c2aaba73353af9145afbdea75badca51196ef12/sdm/test/0001.parquet",
+      "sha256": "e8c9b3539a3c074a5ac99c8c9a00ba672da5ea95501fc3ef515c23db2ba8771f",
+      "size": 299368045,
+      "licence": "CC-BY-4.0",
+      "default": false
+    },
+    {
+      "id": "ami-sdm-test-0002",
+      "dir": "ami-sdm-test",
+      "purpose": "asr-eval-data (AMI far-field SDM, eval partition)",
+      "url": "https://huggingface.co/datasets/edinburghcstr/ami/resolve/0c2aaba73353af9145afbdea75badca51196ef12/sdm/test/0002.parquet",
+      "sha256": "40b5ecf718d528f5695288a6fe67076492020c1e761aabb6cdc778cdd5fb6129",
+      "size": 391552263,
+      "licence": "CC-BY-4.0",
+      "default": false
+    },
+    {
+      "id": "ami-sdm-test-0003",
+      "dir": "ami-sdm-test",
+      "purpose": "asr-eval-data (AMI far-field SDM, eval partition)",
+      "url": "https://huggingface.co/datasets/edinburghcstr/ami/resolve/0c2aaba73353af9145afbdea75badca51196ef12/sdm/test/0003.parquet",
+      "sha256": "f0bceadc1368be231fd6c4f6e688750aa39742f6c364fba7ef3790b74d709372",
+      "size": 290680753,
+      "licence": "CC-BY-4.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-82m",
+      "dir": "kokoro",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro-82M weights, MLX safetensors; byte-identical to the KokoroSwift test app's file)",
+      "url": "https://huggingface.co/mlx-community/Kokoro-82M-bf16/resolve/a71e4d38b236d968966a2002c4c895dbd12b1c3c/kokoro-v1_0.safetensors",
+      "sha256": "4e9ecdf03b8b6cf906070390237feda473dc13327cb8d56a43deaa374c02acd8",
+      "size": 327115152,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-af_heart",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/af_heart.pt",
+      "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff",
+      "size": 523425,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-af_bella",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/af_bella.pt",
+      "sha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
+      "size": 523425,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-am_michael",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/am_michael.pt",
+      "sha256": "9a443b79a4b22489a5b0ab7c651a0bcd1a30bef675c28333f06971abbd47bd37",
+      "size": 523435,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-am_fenrir",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/am_fenrir.pt",
+      "sha256": "98e507eca1db08230ae3b6232d59c10aec9630022d19accac4f5d12fcec3c37a",
+      "size": 523430,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-bf_emma",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/bf_emma.pt",
+      "sha256": "d0a423deabf4a52b4f49318c51742c54e21bb89bbbe9a12141e7758ddb5da701",
+      "size": 523420,
+      "licence": "Apache-2.0",
+      "default": false
+    },
+    {
+      "id": "kokoro-voice-bm_george",
+      "dir": "kokoro/voices",
+      "purpose": "answer voice on the phone, ADR-020 (Kokoro voice style)",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/voices/bm_george.pt",
+      "sha256": "f1bc812213dc59774769e5c80004b13eeb79bd78130b11b2d7f934542dab811b",
+      "size": 523430,
+      "licence": "Apache-2.0",
+      "default": false
+    }
+  ]
+}

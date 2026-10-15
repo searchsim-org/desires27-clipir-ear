@@ -1,0 +1,101 @@
+[
+  {
+    "t": 15.469,
+    "fact": "pilot project runs on an island in the North Sea",
+    "question": "What did the speaker just say about where the pilot project runs?",
+    "must_contain": [
+      "north sea",
+      "island"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 45.001,
+    "fact": "solar farm produces about forty megawatts at peak",
+    "question": "What did the speaker just say about the solar farm?",
+    "must_contain": [
+      "forty",
+      "40"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 59.745,
+    "fact": "turbines switched off above twenty five metres per second",
+    "question": "What did the speaker just say about when the turbines are switched off?",
+    "must_contain": [
+      "twenty five",
+      "25",
+      "twenty-five"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 90.215,
+    "fact": "battery uses lithium iron phosphate cells",
+    "question": "What did the speaker just say about the battery?",
+    "must_contain": [
+      "phosphate"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 103.391,
+    "fact": "hydrogen round trip loses about a third of the energy",
+    "question": "What did the speaker just say about green hydrogen?",
+    "must_contain": [
+      "third"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 110.145,
+    "fact": "pumped hydro is the largest form of storage",
+    "question": "What did the speaker just say about the largest form of energy storage?",
+    "must_contain": [
+      "pumped hydro",
+      "hydro"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 134.24,
+    "fact": "heat pump moves about three units of heat per unit of electricity",
+    "question": "What did the speaker just say about heat pumps?",
+    "must_contain": [
+      "three",
+      "3"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 162.657,
+    "fact": "grid frequency in Europe is fifty hertz",
+    "question": "What did the speaker just say about the grid frequency?",
+    "must_contain": [
+      "fifty",
+      "50"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 176.903,
+    "fact": "homework is to estimate household yearly consumption",
+    "question": "What did the speaker just say about the homework?",
+    "must_contain": [
+      "household",
+      "consumption"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 187.828,
+    "fact": "essay prize is a visit to a geothermal plant in Iceland",
+    "question": "What did the speaker just say about the essay competition prize?",
+    "must_contain": [
+      "iceland",
+      "geothermal"
+    ],
+    "speaker": "Daniel"
+  }
+]

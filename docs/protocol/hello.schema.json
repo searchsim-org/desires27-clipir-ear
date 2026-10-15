@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/hello",
+  "title": "hello",
+  "type": "object",
+  "required": [
+    "t",
+    "token",
+    "client",
+    "caps"
+  ],
+  "properties": {
+    "t": {
+      "const": "hello"
+    },
+    "id": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "client": {
+      "type": "object",
+      "properties": {
+        "app": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "device": {
+          "type": "string"
+        },
+        "os": {
+          "type": "string"
+        }
+      }
+    },
+    "caps": {
+      "type": "object",
+      "properties": {
+        "pcm_in": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

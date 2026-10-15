@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/query.begin",
+  "title": "query.begin",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "session_id"
+  ],
+  "properties": {
+    "t": {
+      "const": "query.begin"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    }
+  }
+}

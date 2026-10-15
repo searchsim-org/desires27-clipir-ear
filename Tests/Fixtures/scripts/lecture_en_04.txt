@@ -1,0 +1,41 @@
+Welcome to the software project course, and thank you for coming to the first session.
+This term you will build a real application for a real client, from the first interview to the final demo.
+The client for this year's project is the city library, and they need a new system for room bookings.
+They will join us twice during the term to review what you have built.
+Let me go through how the teams work.
+You will work in teams of four students, and we form the teams by the end of this week.
+Each team chooses a team lead, but the role rotates every three weeks.
+That way everyone gets some practice at planning and at saying no.
+In the first two weeks you will interview the librarians and write down what they actually need.
+Do not start coding before you understand the problem, it is the most common mistake we see.
+Write the requirements as short user stories, and check each one with the client.
+Now the tools, which are not optional.
+All code must live in the university GitLab, not on personal accounts.
+We look at the commit history when we grade, so commit early and commit often.
+Every change needs approval from two teammates before it is merged.
+Reviews are where most of the learning happens, so take them seriously.
+On testing, we have a simple rule.
+The target for automated test coverage is seventy percent of the code.
+Coverage is not quality, but a project with no tests is not finished.
+We will show you how to run the tests automatically on every push.
+Next, the rhythm of the week.
+There is a short stand up meeting every Monday at nine, and it takes fifteen minutes at most.
+Each person says what they did, what they will do next, and what is blocking them.
+If something is blocking you for more than a day, tell us, do not wait for the meeting.
+Keep a shared board with all open tasks, and move each card when its status changes.
+We will look at the board during the weekly meetings, so keep it honest.
+A board full of cards marked almost done usually means nothing is done at all.
+Some practical matters about money.
+Each team gets a budget of five hundred euros for hardware, such as tablets for testing.
+Keep the receipts, the finance office is very strict about them.
+Now the important dates.
+Demo day is on December the third, in the main hall, and the client will be in the audience.
+Each team gets ten minutes to present and five minutes for questions.
+Rehearse the demo at least twice, and always have a backup video in case the network fails.
+Show the client the thing they asked for first, and the clever extras afterwards.
+Every member of the team should speak during the presentation.
+After the demo you hand in a written report.
+The final report is limited to twenty pages, including figures.
+Shorter is fine, and clearer is always better.
+Late submissions lose five percent of the mark for every day they are late.
+That is the overview, now let us take your questions.

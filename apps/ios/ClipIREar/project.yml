@@ -1,0 +1,109 @@
+# Source of truth for ClipIREar.xcodeproj. Regenerate with: make project   (xcodegen 2.46.0, MIT)
+name: ClipIREar
+options:
+  bundleIdPrefix: de.zerhoudi
+  deploymentTarget:
+    iOS: "18.0"  # ADR-008
+  createIntermediateGroups: true
+configFiles:
+  Debug: Signing.xcconfig
+  Release: Signing.xcconfig
+packages:
+  EarCore:
+    path: ../../..
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    CODE_SIGN_STYLE: Automatic
+targets:
+  ClipIREar:
+    type: application
+    platform: iOS
+    sources: [App, Shared]
+    dependencies:
+      - package: EarCore
+        product: EarCore
+      - package: EarCore
+        product: EarTTSKokoro  # ADR-020
+      - target: ClipIREarWidget
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.zerhoudi.clipir-ear
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.0.1"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: ClipIR Ear
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIBackgroundModes: [audio, bluetooth-central]
+        NSMicrophoneUsageDescription: ClipIR Ear listens through the microphone to keep a short transcript on this phone. Audio never leaves your devices.
+        NSBluetoothAlwaysUsageDescription: ClipIR Ear connects to your Bluetooth pendant to capture audio. Audio never leaves your devices.
+        NSLocalNetworkUsageDescription: ClipIR Ear connects to the earbridge service on your own Mac, nothing else.
+        NSBonjourServices: [_clipir-ear._tcp]
+        NSRemindersFullAccessUsageDescription: ClipIR Ear creates reminders you approve by voice. It never reads others.
+        NSCalendarsWriteOnlyAccessUsageDescription: ClipIR Ear adds calendar events you approve by voice.
+        NSCameraUsageDescription: The camera scans the pairing code shown by earbridge on your Mac. Nothing is recorded.
+        UIFileSharingEnabled: true  # §13: sideload models via Finder
+        LSSupportsOpeningDocumentsInPlace: true
+        NSSupportsLiveActivities: true  # P8.2
+  ClipIREarWidget:  # P8.2 Live Activity / Dynamic Island
+    type: app-extension
+    platform: iOS
+    sources: [Widget, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.zerhoudi.clipir-ear.widget
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "0.0.1"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: ClipIR Ear
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+  ClipIREarTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ../ClipIREarTests
+        excludes: [BenchFixtures]
+      - path: ../ClipIREarTests/BenchFixtures  # copied by `make fixtures` (WAVs are not committed)
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: ClipIREar
+      - package: EarCore
+        product: EarTTSKokoro  # KokoroLoopBench (ADR-020)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.zerhoudi.clipir-ear.tests
+        GENERATE_INFOPLIST_FILE: true
+  ClipIREarUITests:  # P8.1 onboarding flow
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [../ClipIREarUITests]
+    dependencies:
+      - target: ClipIREar
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.zerhoudi.clipir-ear.uitests
+        GENERATE_INFOPLIST_FILE: true
+        TEST_TARGET_NAME: ClipIREar
+schemes:
+  ClipIREar:
+    build:
+      targets:
+        ClipIREar: all
+    run:
+      environmentVariables:
+        CLIPIR_EAR_FIXTURES: $(PROJECT_DIR)/../../../Tests/Fixtures  # simulator demo source (ADR-010)
+    test:
+      targets: [ClipIREarTests, ClipIREarUITests]
+      environmentVariables:
+        CLIPIR_EAR_FIXTURES: $(PROJECT_DIR)/../../../Tests/Fixtures

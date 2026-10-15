@@ -1,0 +1,362 @@
+[
+  {
+    "fixture": "lecture_en_01",
+    "t": 23.497,
+    "question": "What did the speaker just say about the assignment deadline?",
+    "wav": "lecture_en_01_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 40.583,
+    "question": "What did the speaker just say about the dataset?",
+    "wav": "lecture_en_01_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 77.769,
+    "question": "What did the speaker just say about the optimizer?",
+    "wav": "lecture_en_01_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 87.698,
+    "question": "What did the speaker just say about the learning rate warm up?",
+    "wav": "lecture_en_01_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 102.107,
+    "question": "What did the speaker just say about the batch size?",
+    "wav": "lecture_en_01_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 126.964,
+    "question": "What did the speaker just say about dropout?",
+    "wav": "lecture_en_01_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 153.888,
+    "question": "What did the speaker just say about exploding gradients?",
+    "wav": "lecture_en_01_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 170.887,
+    "question": "What did the speaker just say about the validation loss?",
+    "wav": "lecture_en_01_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 189.675,
+    "question": "What did the speaker just say about the lab session?",
+    "wav": "lecture_en_01_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 200.815,
+    "question": "What did the speaker just say about the guest speaker?",
+    "wav": "lecture_en_01_q10.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 16.905,
+    "question": "What did the speaker just say about the river crossing?",
+    "wav": "lecture_en_02_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 33.236,
+    "question": "What did the speaker just say about the oldest stone bridge?",
+    "wav": "lecture_en_02_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 68.351,
+    "question": "What did the speaker just say about the biggest enemy of steel bridges?",
+    "wav": "lecture_en_02_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 77.452,
+    "question": "What did the speaker just say about the material that changed everything?",
+    "wav": "lecture_en_02_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 111.222,
+    "question": "What did the speaker just say about the main span?",
+    "wav": "lecture_en_02_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 131.807,
+    "question": "What did the speaker just say about the wind tunnel testing?",
+    "wav": "lecture_en_02_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 150.098,
+    "question": "What did the speaker just say about the strain gauges?",
+    "wav": "lecture_en_02_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 156.104,
+    "question": "What did the speaker just say about the inspection?",
+    "wav": "lecture_en_02_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 169.61,
+    "question": "What did the speaker just say about the field trip?",
+    "wav": "lecture_en_02_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_02",
+    "t": 179.907,
+    "question": "What did the speaker just say about the reading for next week?",
+    "wav": "lecture_en_02_q10.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 18.123,
+    "question": "What did the speaker just say about how much of the ocean floor reefs cover?",
+    "wav": "lecture_en_03_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 40.542,
+    "question": "What did the speaker just say about the algae?",
+    "wav": "lecture_en_03_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 74.71,
+    "question": "What did the speaker just say about when bleaching starts?",
+    "wav": "lecture_en_03_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 93.669,
+    "question": "What did the speaker just say about the reef recovery?",
+    "wav": "lecture_en_03_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 116.451,
+    "question": "What did the speaker just say about parrotfish?",
+    "wav": "lecture_en_03_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 135.909,
+    "question": "What did the speaker just say about the dive surveys?",
+    "wav": "lecture_en_03_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 147.061,
+    "question": "What did the speaker just say about the sensor buoys?",
+    "wav": "lecture_en_03_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 152.759,
+    "question": "What did the speaker just say about the tissue samples?",
+    "wav": "lecture_en_03_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 162.73,
+    "question": "What did the speaker just say about the research vessel?",
+    "wav": "lecture_en_03_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_03",
+    "t": 176.671,
+    "question": "What did the speaker just say about the exam?",
+    "wav": "lecture_en_03_q10.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 16.968,
+    "question": "What did the speaker just say about the client?",
+    "wav": "lecture_en_04_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 29.961,
+    "question": "What did the speaker just say about the teams?",
+    "wav": "lecture_en_04_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 65.572,
+    "question": "What did the speaker just say about where the code must live?",
+    "wav": "lecture_en_04_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 74.225,
+    "question": "What did the speaker just say about approving changes?",
+    "wav": "lecture_en_04_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 86.927,
+    "question": "What did the speaker just say about test coverage?",
+    "wav": "lecture_en_04_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 104.643,
+    "question": "What did the speaker just say about the stand up meeting?",
+    "wav": "lecture_en_04_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 138.98,
+    "question": "What did the speaker just say about the budget?",
+    "wav": "lecture_en_04_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 151.522,
+    "question": "What did the speaker just say about demo day?",
+    "wav": "lecture_en_04_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 178.288,
+    "question": "What did the speaker just say about the final report?",
+    "wav": "lecture_en_04_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_04",
+    "t": 187.005,
+    "question": "What did the speaker just say about late submissions?",
+    "wav": "lecture_en_04_q10.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 15.469,
+    "question": "What did the speaker just say about where the pilot project runs?",
+    "wav": "lecture_en_05_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 45.001,
+    "question": "What did the speaker just say about the solar farm?",
+    "wav": "lecture_en_05_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 59.745,
+    "question": "What did the speaker just say about when the turbines are switched off?",
+    "wav": "lecture_en_05_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 90.215,
+    "question": "What did the speaker just say about the battery?",
+    "wav": "lecture_en_05_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 103.391,
+    "question": "What did the speaker just say about green hydrogen?",
+    "wav": "lecture_en_05_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 110.145,
+    "question": "What did the speaker just say about the largest form of energy storage?",
+    "wav": "lecture_en_05_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 134.24,
+    "question": "What did the speaker just say about heat pumps?",
+    "wav": "lecture_en_05_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 162.657,
+    "question": "What did the speaker just say about the grid frequency?",
+    "wav": "lecture_en_05_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 176.903,
+    "question": "What did the speaker just say about the homework?",
+    "wav": "lecture_en_05_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_05",
+    "t": 187.828,
+    "question": "What did the speaker just say about the essay competition prize?",
+    "wav": "lecture_en_05_q10.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 13.046,
+    "question": "What did the speaker just say about the launch date?",
+    "wav": "meeting_en_01_q01.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 27.893,
+    "question": "What did the speaker just say about the crash?",
+    "wav": "meeting_en_01_q02.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 55.418,
+    "question": "What did the speaker just say about the new feature?",
+    "wav": "meeting_en_01_q03.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 67.013,
+    "question": "What did the speaker just say about the marketing budget?",
+    "wav": "meeting_en_01_q04.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 81.042,
+    "question": "What did the speaker just say about the database migration?",
+    "wav": "meeting_en_01_q05.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 96.111,
+    "question": "What did the speaker just say about page load time?",
+    "wav": "meeting_en_01_q06.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 107.646,
+    "question": "What did the speaker just say about the user survey?",
+    "wav": "meeting_en_01_q07.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 115.704,
+    "question": "What did the speaker just say about hiring?",
+    "wav": "meeting_en_01_q08.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 125.95,
+    "question": "What did the speaker just say about the advisory board?",
+    "wav": "meeting_en_01_q09.wav"
+  },
+  {
+    "fixture": "meeting_en_01",
+    "t": 136.393,
+    "question": "What did the speaker just say about the next meeting?",
+    "wav": "meeting_en_01_q10.wav"
+  }
+]

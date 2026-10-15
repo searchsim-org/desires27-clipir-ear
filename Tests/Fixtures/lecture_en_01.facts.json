@@ -1,0 +1,101 @@
+[
+  {
+    "t": 23.497,
+    "fact": "assignment deadline moves to Friday the 14th",
+    "question": "What did the speaker just say about the assignment deadline?",
+    "must_contain": [
+      "Friday"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 40.583,
+    "fact": "the dataset is called Meadowlark",
+    "question": "What did the speaker just say about the dataset?",
+    "must_contain": [
+      "Meadowlark",
+      "meadow lark"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 77.769,
+    "fact": "the optimizer is Adam",
+    "question": "What did the speaker just say about the optimizer?",
+    "must_contain": [
+      "Adam"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 87.698,
+    "fact": "learning rate warms up over the first 2000 steps",
+    "question": "What did the speaker just say about the learning rate warm up?",
+    "must_contain": [
+      "2000",
+      "2,000",
+      "two thousand"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 102.107,
+    "fact": "batch size is 256",
+    "question": "What did the speaker just say about the batch size?",
+    "must_contain": [
+      "256",
+      "two hundred fifty six",
+      "two fifty six"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 126.964,
+    "fact": "dropout rate is 10 percent",
+    "question": "What did the speaker just say about dropout?",
+    "must_contain": [
+      "10",
+      "ten"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 153.888,
+    "fact": "gradient clipping with maximum norm one",
+    "question": "What did the speaker just say about exploding gradients?",
+    "must_contain": [
+      "clipping",
+      "clip"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 170.887,
+    "fact": "validation loss stopped improving after epoch 12",
+    "question": "What did the speaker just say about the validation loss?",
+    "must_contain": [
+      "twelve",
+      "12"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 189.675,
+    "fact": "lab session moves to the Hamilton building",
+    "question": "What did the speaker just say about the lab session?",
+    "must_contain": [
+      "Hamilton"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 200.815,
+    "fact": "guest speaker works at the European Space Agency",
+    "question": "What did the speaker just say about the guest speaker?",
+    "must_contain": [
+      "space agency",
+      "ESA"
+    ],
+    "speaker": "Samantha"
+  }
+]

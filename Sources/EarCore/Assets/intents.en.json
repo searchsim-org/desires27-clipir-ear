@@ -1,0 +1,14 @@
+{
+  "_comment": "HANDOVER §8.1 rule table (English, ADR-004). Checked in order; first match wins; case-insensitive regular expressions. Shared with mac/earbridge.",
+  "rules": [
+    {"intent": "explainLast", "patterns": ["what did (he|she|they|the speaker|you) (just )?say", "^did (he|she|they|the speaker|you) (just )?say", "what was (that|just said)", "repeat that", "say that again"]},
+    {"intent": "expand", "patterns": ["\\bexpand\\b", "tell me more", "explain (that|this|it)", "more about (that|this)", "what does that mean"]},
+    {"intent": "summarizeWindow", "patterns": ["what did i miss", "summari[sz]e", "recap", "catch me up"]},
+    {"intent": "whoSaid", "patterns": ["who (said|mentioned|proposed|asked|suggested)"]},
+    {"intent": "translate", "patterns": ["\\btranslate\\b", "what does .+ mean in", "how do you say .+ in"]},
+    {"intent": "noteThis", "patterns": ["note (this|that)", "remember (this|that)", "clip (this|that)", "save (this|that)"]},
+    {"intent": "remindMe", "patterns": ["remind me"]},
+    {"intent": "searchWeb", "patterns": ["search the web", "look (it|that) up online", "google (it|that)"]}
+  ],
+  "numbers": {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "fifteen": 15, "twenty": 20, "thirty": 30}
+}

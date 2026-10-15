@@ -1,0 +1,41 @@
+# voices: A=Samantha B=Daniel
+A: Good morning everyone, and welcome back to the course on training neural networks.
+A: Today we are going to walk through a full training run, from the raw data to a model we can actually trust.
+A: Before we start, a quick word about logistics, because a few of you asked about the assignment.
+A: The deadline for the second assignment moves to Friday the fourteenth, so you have one extra week. ## fact=assignment deadline moves to Friday the 14th ## q=What did the speaker just say about the assignment deadline? ## must=Friday
+A: Please submit through the usual portal, and keep your notebooks tidy.
+B: Thanks. Let me pick up with the data, since everything else depends on it.
+B: The dataset we use this term is called Meadowlark, and it contains about forty thousand labelled images of birds. ## fact=the dataset is called Meadowlark ## q=What did the speaker just say about the dataset? ## must=Meadowlark|meadow lark
+B: Each image comes with a species label and a rough bounding box drawn by volunteers.
+B: We hold out one in every five images for validation and never touch them during training.
+B: The labels are noisy, so expect some birds to be filed under the wrong species.
+B: That noise is one reason we lean on regularisation later in the lecture.
+A: Now, the model itself is a small convolutional network with five blocks.
+A: Each block has two convolutions, a normalisation layer, and a pooling step.
+A: For the optimizer we use Adam, because it is forgiving when the learning rate is not perfectly tuned. ## fact=the optimizer is Adam ## q=What did the speaker just say about the optimizer? ## must=Adam
+A: Plain stochastic gradient descent can work too, but it needs much more patience.
+A: The learning rate warms up over the first two thousand steps and then decays slowly. ## fact=learning rate warms up over the first 2000 steps ## q=What did the speaker just say about the learning rate warm up? ## must=2000|2,000|two thousand
+A: Without the warm up, the first few hundred updates tend to be wild.
+B: Let me add something about memory, because people always run out of it.
+B: We train with a batch size of two hundred fifty six on a single graphics card. ## fact=batch size is 256 ## q=What did the speaker just say about the batch size? ## must=256|two hundred fifty six|two fifty six
+B: If your card is smaller, halve the batch and accumulate gradients over two steps.
+B: The result is nearly identical, it just takes a little longer.
+B: Mixed precision also helps, and it rarely hurts accuracy on a task like this.
+A: Next, regularisation, which is where most of the real work happens.
+A: We apply dropout with a rate of ten percent after the last two blocks. ## fact=dropout rate is 10 percent ## q=What did the speaker just say about dropout? ## must=10|ten
+A: We also add a little weight decay, which keeps the weights from growing without limit.
+A: And we flip and crop the images at random, so the network never sees exactly the same picture twice.
+A: Together these tricks matter more than any change to the architecture.
+B: Now let us talk about stability, which is the part that usually goes wrong at two in the morning.
+B: To stop exploding gradients we use gradient clipping with a maximum norm of one. ## fact=gradient clipping with maximum norm one ## q=What did the speaker just say about exploding gradients? ## must=clipping|clip
+B: If you see the loss jump to infinity, check that clipping is switched on before anything else.
+B: We also log the gradient norm every hundred steps so problems show up early.
+A: So how long do we train? In our runs the validation loss stopped improving after epoch twelve. ## fact=validation loss stopped improving after epoch 12 ## q=What did the speaker just say about the validation loss? ## must=twelve|12
+A: After that point the training loss keeps falling, but the model is only memorising.
+A: That is why we keep the checkpoint with the best validation score, not the last one.
+B: One more announcement before we finish.
+B: From next week the lab session moves to the Hamilton building, on the second floor. ## fact=lab session moves to the Hamilton building ## q=What did the speaker just say about the lab session? ## must=Hamilton
+B: The room is bigger, and there are finally enough power sockets for everyone.
+A: And our guest speaker next week works at the European Space Agency, on satellite imaging. ## fact=guest speaker works at the European Space Agency ## q=What did the speaker just say about the guest speaker? ## must=space agency|ESA
+A: Please bring questions, she is happy to talk about careers as well.
+A: That is all for today, see you on Thursday.

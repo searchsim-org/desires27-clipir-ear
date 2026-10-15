@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/asr.partial",
+  "title": "asr.partial",
+  "type": "object",
+  "required": [
+    "t",
+    "session_id",
+    "text",
+    "t0",
+    "t1"
+  ],
+  "properties": {
+    "t": {
+      "const": "asr.partial"
+    },
+    "id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "t0": {
+      "type": "number"
+    },
+    "t1": {
+      "type": "number"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "speaker": {
+      "type": "string"
+    }
+  }
+}

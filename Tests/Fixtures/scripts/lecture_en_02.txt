@@ -1,0 +1,36 @@
+Hello and welcome to the third lecture on the history of bridge engineering.
+Today we follow one river crossing through nine centuries, from stone arches to modern suspension bridges.
+Our case study is a crossing over a tidal estuary, which makes every design decision harder.
+The water level changes by several metres twice a day, and the currents are strong.
+Let us begin with the oldest structure, because parts of it still stand.
+The oldest stone bridge still in use in the region was built in the year eleven forty.
+It has seven small arches, and each pier sits on a bed of timber piles driven into the mud.
+Those timber piles survived because they stayed wet and away from oxygen.
+When the river was dredged in the nineteenth century, two of the piers began to settle.
+The next big change came with iron and then steel.
+Iron allowed longer spans, but early iron bridges were brittle in cold weather.
+Steel solved much of that, yet it brought its own problem.
+The biggest enemy of steel bridges is corrosion, and most of it is caused by road salt in winter.
+Salt water runs into the joints and sits there for months.
+Then came the material that changed everything, reinforced concrete.
+Concrete is strong when squeezed and weak when stretched, so steel bars carry the tension.
+It is cheap, it can be poured into almost any shape, and it does not need painting.
+Most of the short bridges you drive over every day are built this way.
+Even so, concrete cracks with time, and water in those cracks slowly attacks the steel inside.
+Now to the star of the case study, the suspension bridge that opened in the nineteen sixties.
+It has a main span of one thousand two hundred metres between the towers.
+The two main cables are spun on site from thousands of individual steel wires.
+Spinning the cables alone took almost a year.
+Long, light decks have a dangerous habit, they can start to oscillate in the wind.
+After wind tunnel testing, the engineers added slots along the deck to let the air pass through.
+Those slots break up the vortices that would otherwise make the deck swing.
+The same idea appears in almost every long span built since.
+Keeping a bridge like this alive is a full time job.
+Today it carries more than three hundred strain gauges that report how the steel is stretching.
+Engineers also climb the cables in person, and a full inspection happens every six years.
+Between inspections, the sensor data tells them where to look first.
+A few practical points before we stop.
+The field trip to the bridge is on Wednesday morning, and we meet at the train station.
+Wear sturdy shoes and bring a warm jacket, it is always windy on the deck.
+And the reading for next week is chapter seven, on cable stayed bridges.
+Thank you, and see you at the station.

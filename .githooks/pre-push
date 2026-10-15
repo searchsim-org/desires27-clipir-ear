@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# P0.9: no macOS CI runner for this repo, so `make ci` is the gate (HANDOVER P0.9). Enabled by `make bootstrap`.
+set -e
+cd "$(git rev-parse --show-toplevel)"
+echo "pre-push: make ci"
+make ci

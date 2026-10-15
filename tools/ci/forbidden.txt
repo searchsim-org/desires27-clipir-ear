@@ -1,0 +1,37 @@
+# One pattern per line (case-insensitive substring). tools/ci/egress_check.py fails if any appears in Sources/, Tests/, apps/, mac/, tools/ (excluding tools/ci/ and docs/).
+# Cloud AI / speech / LLM vendors
+api.openai.com
+openai.com/v1
+anthropic.com
+generativelanguage.googleapis.com
+aiplatform.googleapis.com
+speech.googleapis.com
+deepgram.com
+assemblyai.com
+elevenlabs.io
+api.mistral.ai
+groq.com
+cohere.ai
+replicate.com
+together.xyz
+# Analytics / telemetry / crash reporting
+Firebase
+FirebaseAnalytics
+Crashlytics
+Sentry
+Mixpanel
+amplitude.com
+import Amplitude
+Segment.io
+Bugsnag
+Datadog
+NewRelic
+AppCenter
+# Emotion inference / disallowed model families
+SenseVoice
+emotion2vec
+gemma-3n
+embeddinggemma
+openwakeword
+picovoice
+# URL allow-listing (localhost, 127.0.0.1, the paired Mac, ws:// on the LAN until Phase 8) is handled by tools/ci/egress_check.py, not by this list.

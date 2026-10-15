@@ -1,0 +1,33 @@
+Okay, let's get started, we have a lot to cover and only thirty minutes.
+First item is the release plan for the new version of the app.
+After yesterday's review, the launch date moved to the twentieth of March.
+That works for engineering, but only if we fix the crash first.
+Right, can you give us an update on that?
+Sure. The crash happens only on older tablets, when the app is resumed from the background.
+We can reproduce it now, and I expect a fix by the end of the week.
+Is it affecting many users?
+About two percent of sessions, mostly in schools that use older devices.
+Then we should mention it in the release notes either way.
+Agreed. Next, the feature everyone keeps asking about.
+We are going to call the new feature Quick Share, and it lets people send a list to a friend in one tap.
+Marketing likes the name, so no objections from us.
+But I have some less good news about our side.
+The marketing budget for the spring campaign is cut by fifteen percent.
+So we will focus on social media and drop the printed posters.
+That is a shame, but it makes sense.
+On the infrastructure side, the backend migration to the new database finishes next Tuesday.
+There will be a short maintenance window at night, around one hour.
+Please post the exact time in the channel once you know it.
+Will do. And one good number to share, page load time is now one point two seconds on average.
+That is a big improvement, we can use it in the campaign.
+We also finished the user survey last week.
+The feature people want most is a dark mode, by a wide margin.
+Interesting, let's put that on the roadmap for the summer.
+On staffing, we will hire two more designers in January.
+The job posts go out next week, so please share them with anyone you know.
+One more thing from me, the customer advisory board meets in Lisbon this year.
+Two of us will travel, and we will report back afterwards.
+Great. Last point, the next meeting is moved to Thursday afternoon because of the public holiday.
+Thursday is fine for me.
+For me too.
+Perfect, thanks everyone, that's all for today.

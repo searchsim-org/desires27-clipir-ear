@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/error",
+  "title": "error",
+  "type": "object",
+  "required": [
+    "t",
+    "code",
+    "message"
+  ],
+  "properties": {
+    "t": {
+      "const": "error"
+    },
+    "id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    }
+  }
+}

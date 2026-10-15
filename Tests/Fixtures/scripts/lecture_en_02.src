@@ -1,0 +1,37 @@
+# voices: A=Karen B=Rishi
+A: Hello and welcome to the third lecture on the history of bridge engineering.
+A: Today we follow one river crossing through nine centuries, from stone arches to modern suspension bridges.
+A: Our case study is a crossing over a tidal estuary, which makes every design decision harder. ## fact=the crossing is over a tidal estuary ## q=What did the speaker just say about the river crossing? ## must=tidal|estuary
+A: The water level changes by several metres twice a day, and the currents are strong.
+B: Let us begin with the oldest structure, because parts of it still stand.
+B: The oldest stone bridge still in use in the region was built in the year eleven forty. ## fact=oldest stone bridge built in 1140 ## q=What did the speaker just say about the oldest stone bridge? ## must=1140|eleven forty
+B: It has seven small arches, and each pier sits on a bed of timber piles driven into the mud.
+B: Those timber piles survived because they stayed wet and away from oxygen.
+B: When the river was dredged in the nineteenth century, two of the piers began to settle.
+A: The next big change came with iron and then steel.
+A: Iron allowed longer spans, but early iron bridges were brittle in cold weather.
+A: Steel solved much of that, yet it brought its own problem.
+A: The biggest enemy of steel bridges is corrosion, and most of it is caused by road salt in winter. ## fact=steel bridges mostly corroded by road salt ## q=What did the speaker just say about the biggest enemy of steel bridges? ## must=salt|corrosion
+A: Salt water runs into the joints and sits there for months.
+B: Then came the material that changed everything, reinforced concrete. ## fact=reinforced concrete changed everything ## q=What did the speaker just say about the material that changed everything? ## must=concrete
+B: Concrete is strong when squeezed and weak when stretched, so steel bars carry the tension.
+B: It is cheap, it can be poured into almost any shape, and it does not need painting.
+B: Most of the short bridges you drive over every day are built this way.
+B: Even so, concrete cracks with time, and water in those cracks slowly attacks the steel inside.
+A: Now to the star of the case study, the suspension bridge that opened in the nineteen sixties.
+A: It has a main span of one thousand two hundred metres between the towers. ## fact=main span of 1200 metres ## q=What did the speaker just say about the main span? ## must=1200|1,200|twelve hundred|one thousand two hundred
+A: The two main cables are spun on site from thousands of individual steel wires.
+A: Spinning the cables alone took almost a year.
+B: Long, light decks have a dangerous habit, they can start to oscillate in the wind.
+B: After wind tunnel testing, the engineers added slots along the deck to let the air pass through. ## fact=engineers added slots in the deck after wind tunnel tests ## q=What did the speaker just say about the wind tunnel testing? ## must=slot
+B: Those slots break up the vortices that would otherwise make the deck swing.
+B: The same idea appears in almost every long span built since.
+A: Keeping a bridge like this alive is a full time job.
+A: Today it carries more than three hundred strain gauges that report how the steel is stretching. ## fact=more than 300 strain gauges ## q=What did the speaker just say about the strain gauges? ## must=300|three hundred
+A: Engineers also climb the cables in person, and a full inspection happens every six years. ## fact=full inspection every six years ## q=What did the speaker just say about the inspection? ## must=six|6
+A: Between inspections, the sensor data tells them where to look first.
+B: A few practical points before we stop.
+B: The field trip to the bridge is on Wednesday morning, and we meet at the train station. ## fact=field trip is on Wednesday morning ## q=What did the speaker just say about the field trip? ## must=Wednesday
+B: Wear sturdy shoes and bring a warm jacket, it is always windy on the deck.
+A: And the reading for next week is chapter seven, on cable stayed bridges. ## fact=reading for next week is chapter seven ## q=What did the speaker just say about the reading for next week? ## must=seven|7
+A: Thank you, and see you at the station.

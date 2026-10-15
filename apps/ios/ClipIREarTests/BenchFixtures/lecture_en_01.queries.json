@@ -1,0 +1,62 @@
+[
+  {
+    "fixture": "lecture_en_01",
+    "t": 23.497,
+    "question": "What did the speaker just say about the assignment deadline?",
+    "wav": "lecture_en_01_q01.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 40.583,
+    "question": "What did the speaker just say about the dataset?",
+    "wav": "lecture_en_01_q02.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 77.769,
+    "question": "What did the speaker just say about the optimizer?",
+    "wav": "lecture_en_01_q03.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 87.698,
+    "question": "What did the speaker just say about the learning rate warm up?",
+    "wav": "lecture_en_01_q04.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 102.107,
+    "question": "What did the speaker just say about the batch size?",
+    "wav": "lecture_en_01_q05.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 126.964,
+    "question": "What did the speaker just say about dropout?",
+    "wav": "lecture_en_01_q06.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 153.888,
+    "question": "What did the speaker just say about exploding gradients?",
+    "wav": "lecture_en_01_q07.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 170.887,
+    "question": "What did the speaker just say about the validation loss?",
+    "wav": "lecture_en_01_q08.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 189.675,
+    "question": "What did the speaker just say about the lab session?",
+    "wav": "lecture_en_01_q09.wav"
+  },
+  {
+    "fixture": "lecture_en_01",
+    "t": 200.815,
+    "question": "What did the speaker just say about the guest speaker?",
+    "wav": "lecture_en_01_q10.wav"
+  }
+]

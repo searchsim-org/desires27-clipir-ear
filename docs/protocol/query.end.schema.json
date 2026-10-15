@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/query.end",
+  "title": "query.end",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "window_seconds"
+  ],
+  "properties": {
+    "t": {
+      "const": "query.end"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "window_seconds": {
+      "type": "number"
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "t0",
+          "t1",
+          "text"
+        ],
+        "properties": {
+          "t0": {
+            "type": "number"
+          },
+          "t1": {
+            "type": "number"
+          },
+          "text": {
+            "type": "string"
+          },
+          "speaker": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "at": {
+      "type": "number"
+    }
+  }
+}

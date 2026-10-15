@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/session.stop",
+  "title": "session.stop",
+  "type": "object",
+  "required": [
+    "t",
+    "session_id"
+  ],
+  "properties": {
+    "t": {
+      "const": "session.stop"
+    },
+    "id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/pong",
+  "title": "pong",
+  "type": "object",
+  "required": [
+    "t",
+    "ts"
+  ],
+  "properties": {
+    "t": {
+      "const": "pong"
+    },
+    "id": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "number"
+    }
+  }
+}

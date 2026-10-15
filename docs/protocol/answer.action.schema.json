@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/answer.action",
+  "title": "answer.action",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "action"
+  ],
+  "properties": {
+    "t": {
+      "const": "answer.action"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "action": {
+      "type": "object"
+    }
+  }
+}

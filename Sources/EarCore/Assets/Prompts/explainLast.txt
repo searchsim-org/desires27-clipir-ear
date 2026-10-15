@@ -1,0 +1,4 @@
+TRANSCRIPT (last {W}s, newest last):
+{window}
+
+QUESTION: {question}

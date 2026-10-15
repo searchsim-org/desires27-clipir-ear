@@ -1,0 +1,95 @@
+[
+  {
+    "t": 13.046,
+    "fact": "launch date moved to the twentieth of March",
+    "question": "What did the speaker just say about the launch date?",
+    "must_contain": [
+      "March"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 27.893,
+    "fact": "crash happens only on older tablets",
+    "question": "What did the speaker just say about the crash?",
+    "must_contain": [
+      "tablet"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 55.418,
+    "fact": "new feature is called Quick Share",
+    "question": "What did the speaker just say about the new feature?",
+    "must_contain": [
+      "quick share",
+      "quickshare"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 67.013,
+    "fact": "marketing budget cut by fifteen percent",
+    "question": "What did the speaker just say about the marketing budget?",
+    "must_contain": [
+      "fifteen",
+      "15"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 81.042,
+    "fact": "backend database migration finishes next Tuesday",
+    "question": "What did the speaker just say about the database migration?",
+    "must_contain": [
+      "tuesday"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 96.111,
+    "fact": "page load time is now 1.2 seconds",
+    "question": "What did the speaker just say about page load time?",
+    "must_contain": [
+      "1.2",
+      "one point two"
+    ],
+    "speaker": "Daniel"
+  },
+  {
+    "t": 107.646,
+    "fact": "users most want a dark mode",
+    "question": "What did the speaker just say about the user survey?",
+    "must_contain": [
+      "dark mode"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 115.704,
+    "fact": "two more designers will be hired in January",
+    "question": "What did the speaker just say about hiring?",
+    "must_contain": [
+      "january"
+    ],
+    "speaker": "Samantha"
+  },
+  {
+    "t": 125.95,
+    "fact": "customer advisory board meets in Lisbon",
+    "question": "What did the speaker just say about the advisory board?",
+    "must_contain": [
+      "lisbon"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 136.393,
+    "fact": "next meeting moved to Thursday afternoon",
+    "question": "What did the speaker just say about the next meeting?",
+    "must_contain": [
+      "thursday"
+    ],
+    "speaker": "Samantha"
+  }
+]

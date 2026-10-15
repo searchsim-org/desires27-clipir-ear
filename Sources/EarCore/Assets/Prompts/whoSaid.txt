@@ -1,0 +1,11 @@
+TRANSCRIPT:
+{window}
+
+RELATED EARLIER:
+{retrieved}
+
+NOTES:
+{notes}
+
+QUESTION: {question}
+TASK: Say which speaker label said it and quote the sentence.

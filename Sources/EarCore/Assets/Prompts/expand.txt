@@ -1,0 +1,10 @@
+TRANSCRIPT:
+{window}
+
+RELATED EARLIER:
+{retrieved}
+
+NOTES:
+{notes}
+
+TASK: Expand on what was just said. Explain the key term or claim, then add one useful piece of context.

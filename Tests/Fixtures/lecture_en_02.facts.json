@@ -1,0 +1,101 @@
+[
+  {
+    "t": 16.905,
+    "fact": "the crossing is over a tidal estuary",
+    "question": "What did the speaker just say about the river crossing?",
+    "must_contain": [
+      "tidal",
+      "estuary"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 33.236,
+    "fact": "oldest stone bridge built in 1140",
+    "question": "What did the speaker just say about the oldest stone bridge?",
+    "must_contain": [
+      "1140",
+      "eleven forty"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 68.351,
+    "fact": "steel bridges mostly corroded by road salt",
+    "question": "What did the speaker just say about the biggest enemy of steel bridges?",
+    "must_contain": [
+      "salt",
+      "corrosion"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 77.452,
+    "fact": "reinforced concrete changed everything",
+    "question": "What did the speaker just say about the material that changed everything?",
+    "must_contain": [
+      "concrete"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 111.222,
+    "fact": "main span of 1200 metres",
+    "question": "What did the speaker just say about the main span?",
+    "must_contain": [
+      "1200",
+      "1,200",
+      "twelve hundred",
+      "one thousand two hundred"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 131.807,
+    "fact": "engineers added slots in the deck after wind tunnel tests",
+    "question": "What did the speaker just say about the wind tunnel testing?",
+    "must_contain": [
+      "slot"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 150.098,
+    "fact": "more than 300 strain gauges",
+    "question": "What did the speaker just say about the strain gauges?",
+    "must_contain": [
+      "300",
+      "three hundred"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 156.104,
+    "fact": "full inspection every six years",
+    "question": "What did the speaker just say about the inspection?",
+    "must_contain": [
+      "six",
+      "6"
+    ],
+    "speaker": "Karen"
+  },
+  {
+    "t": 169.61,
+    "fact": "field trip is on Wednesday morning",
+    "question": "What did the speaker just say about the field trip?",
+    "must_contain": [
+      "Wednesday"
+    ],
+    "speaker": "Rishi"
+  },
+  {
+    "t": 179.907,
+    "fact": "reading for next week is chapter seven",
+    "question": "What did the speaker just say about the reading for next week?",
+    "must_contain": [
+      "seven",
+      "7"
+    ],
+    "speaker": "Karen"
+  }
+]

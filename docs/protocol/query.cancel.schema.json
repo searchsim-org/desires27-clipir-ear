@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/query.cancel",
+  "title": "query.cancel",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id"
+  ],
+  "properties": {
+    "t": {
+      "const": "query.cancel"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    }
+  }
+}

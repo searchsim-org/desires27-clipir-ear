@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clipir-ear/v1/answer.sentence",
+  "title": "answer.sentence",
+  "type": "object",
+  "required": [
+    "t",
+    "query_id",
+    "text"
+  ],
+  "properties": {
+    "t": {
+      "const": "answer.sentence"
+    },
+    "id": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "knowledge_tier": {
+      "type": "string"
+    }
+  }
+}

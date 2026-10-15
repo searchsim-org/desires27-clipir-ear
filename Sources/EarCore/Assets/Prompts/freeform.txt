@@ -1,0 +1,10 @@
+TRANSCRIPT:
+{window}
+
+RELATED EARLIER:
+{retrieved}
+
+NOTES:
+{notes}
+
+QUESTION: {question}

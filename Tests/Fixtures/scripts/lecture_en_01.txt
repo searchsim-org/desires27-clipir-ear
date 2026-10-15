@@ -1,0 +1,40 @@
+Good morning everyone, and welcome back to the course on training neural networks.
+Today we are going to walk through a full training run, from the raw data to a model we can actually trust.
+Before we start, a quick word about logistics, because a few of you asked about the assignment.
+The deadline for the second assignment moves to Friday the fourteenth, so you have one extra week.
+Please submit through the usual portal, and keep your notebooks tidy.
+Thanks. Let me pick up with the data, since everything else depends on it.
+The dataset we use this term is called Meadowlark, and it contains about forty thousand labelled images of birds.
+Each image comes with a species label and a rough bounding box drawn by volunteers.
+We hold out one in every five images for validation and never touch them during training.
+The labels are noisy, so expect some birds to be filed under the wrong species.
+That noise is one reason we lean on regularisation later in the lecture.
+Now, the model itself is a small convolutional network with five blocks.
+Each block has two convolutions, a normalisation layer, and a pooling step.
+For the optimizer we use Adam, because it is forgiving when the learning rate is not perfectly tuned.
+Plain stochastic gradient descent can work too, but it needs much more patience.
+The learning rate warms up over the first two thousand steps and then decays slowly.
+Without the warm up, the first few hundred updates tend to be wild.
+Let me add something about memory, because people always run out of it.
+We train with a batch size of two hundred fifty six on a single graphics card.
+If your card is smaller, halve the batch and accumulate gradients over two steps.
+The result is nearly identical, it just takes a little longer.
+Mixed precision also helps, and it rarely hurts accuracy on a task like this.
+Next, regularisation, which is where most of the real work happens.
+We apply dropout with a rate of ten percent after the last two blocks.
+We also add a little weight decay, which keeps the weights from growing without limit.
+And we flip and crop the images at random, so the network never sees exactly the same picture twice.
+Together these tricks matter more than any change to the architecture.
+Now let us talk about stability, which is the part that usually goes wrong at two in the morning.
+To stop exploding gradients we use gradient clipping with a maximum norm of one.
+If you see the loss jump to infinity, check that clipping is switched on before anything else.
+We also log the gradient norm every hundred steps so problems show up early.
+So how long do we train? In our runs the validation loss stopped improving after epoch twelve.
+After that point the training loss keeps falling, but the model is only memorising.
+That is why we keep the checkpoint with the best validation score, not the last one.
+One more announcement before we finish.
+From next week the lab session moves to the Hamilton building, on the second floor.
+The room is bigger, and there are finally enough power sockets for everyone.
+And our guest speaker next week works at the European Space Agency, on satellite imaging.
+Please bring questions, she is happy to talk about careers as well.
+That is all for today, see you on Thursday.

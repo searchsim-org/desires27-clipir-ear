@@ -1,0 +1,10 @@
+TRANSCRIPT:
+{window}
+
+RELATED EARLIER:
+{retrieved}
+
+NOTES:
+{notes}
+
+TASK: Summarize what was said in the last {N} minutes in ≤ 4 sentences, in order.

@@ -1,0 +1,27 @@
+[project]
+name = "earbridge"
+version = "0.0.1"
+description = "ClipIR Ear Mac service (Phase 5)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "qrcode==8.2",
+    "websockets==15.0.1",
+]
+
+[project.scripts]
+earbridge = "earbridge.cli:main"
+
+[dependency-groups]
+dev = [
+    "jsonschema==4.25.1",
+    "pyarrow==26.0.0",
+    "pytest==8.3.5",
+    "ruff==0.11.8",
+]
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "../../tools", "../../Tests/Fixtures"]

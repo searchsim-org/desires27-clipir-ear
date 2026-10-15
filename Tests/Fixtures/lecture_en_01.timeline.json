@@ -1,0 +1,242 @@
+[
+  {
+    "t0": 0.5,
+    "t1": 4.881,
+    "speaker": "Samantha",
+    "text": "Good morning everyone, and welcome back to the course on training neural networks."
+  },
+  {
+    "t0": 5.481,
+    "t1": 11.286,
+    "speaker": "Samantha",
+    "text": "Today we are going to walk through a full training run, from the raw data to a model we can actually trust."
+  },
+  {
+    "t0": 11.886,
+    "t1": 17.451,
+    "speaker": "Samantha",
+    "text": "Before we start, a quick word about logistics, because a few of you asked about the assignment."
+  },
+  {
+    "t0": 18.051,
+    "t1": 23.497,
+    "speaker": "Samantha",
+    "text": "The deadline for the second assignment moves to Friday the fourteenth, so you have one extra week."
+  },
+  {
+    "t0": 24.097,
+    "t1": 27.636,
+    "speaker": "Samantha",
+    "text": "Please submit through the usual portal, and keep your notebooks tidy."
+  },
+  {
+    "t0": 28.636,
+    "t1": 33.389,
+    "speaker": "Daniel",
+    "text": "Thanks. Let me pick up with the data, since everything else depends on it."
+  },
+  {
+    "t0": 33.989,
+    "t1": 40.583,
+    "speaker": "Daniel",
+    "text": "The dataset we use this term is called Meadowlark, and it contains about forty thousand labelled images of birds."
+  },
+  {
+    "t0": 41.183,
+    "t1": 45.933,
+    "speaker": "Daniel",
+    "text": "Each image comes with a species label and a rough bounding box drawn by volunteers."
+  },
+  {
+    "t0": 46.533,
+    "t1": 51.203,
+    "speaker": "Daniel",
+    "text": "We hold out one in every five images for validation and never touch them during training."
+  },
+  {
+    "t0": 51.803,
+    "t1": 56.633,
+    "speaker": "Daniel",
+    "text": "The labels are noisy, so expect some birds to be filed under the wrong species."
+  },
+  {
+    "t0": 57.233,
+    "t1": 61.282,
+    "speaker": "Daniel",
+    "text": "That noise is one reason we lean on regularisation later in the lecture."
+  },
+  {
+    "t0": 62.282,
+    "t1": 66.678,
+    "speaker": "Samantha",
+    "text": "Now, the model itself is a small convolutional network with five blocks."
+  },
+  {
+    "t0": 67.278,
+    "t1": 71.943,
+    "speaker": "Samantha",
+    "text": "Each block has two convolutions, a normalisation layer, and a pooling step."
+  },
+  {
+    "t0": 72.543,
+    "t1": 77.769,
+    "speaker": "Samantha",
+    "text": "For the optimizer we use Adam, because it is forgiving when the learning rate is not perfectly tuned."
+  },
+  {
+    "t0": 78.369,
+    "t1": 82.941,
+    "speaker": "Samantha",
+    "text": "Plain stochastic gradient descent can work too, but it needs much more patience."
+  },
+  {
+    "t0": 83.541,
+    "t1": 87.698,
+    "speaker": "Samantha",
+    "text": "The learning rate warms up over the first two thousand steps and then decays slowly."
+  },
+  {
+    "t0": 88.298,
+    "t1": 92.085,
+    "speaker": "Samantha",
+    "text": "Without the warm up, the first few hundred updates tend to be wild."
+  },
+  {
+    "t0": 93.085,
+    "t1": 97.209,
+    "speaker": "Daniel",
+    "text": "Let me add something about memory, because people always run out of it."
+  },
+  {
+    "t0": 97.809,
+    "t1": 102.107,
+    "speaker": "Daniel",
+    "text": "We train with a batch size of two hundred fifty six on a single graphics card."
+  },
+  {
+    "t0": 102.707,
+    "t1": 107.285,
+    "speaker": "Daniel",
+    "text": "If your card is smaller, halve the batch and accumulate gradients over two steps."
+  },
+  {
+    "t0": 107.885,
+    "t1": 111.516,
+    "speaker": "Daniel",
+    "text": "The result is nearly identical, it just takes a little longer."
+  },
+  {
+    "t0": 112.116,
+    "t1": 117.181,
+    "speaker": "Daniel",
+    "text": "Mixed precision also helps, and it rarely hurts accuracy on a task like this."
+  },
+  {
+    "t0": 118.181,
+    "t1": 122.449,
+    "speaker": "Samantha",
+    "text": "Next, regularisation, which is where most of the real work happens."
+  },
+  {
+    "t0": 123.049,
+    "t1": 126.964,
+    "speaker": "Samantha",
+    "text": "We apply dropout with a rate of ten percent after the last two blocks."
+  },
+  {
+    "t0": 127.564,
+    "t1": 131.966,
+    "speaker": "Samantha",
+    "text": "We also add a little weight decay, which keeps the weights from growing without limit."
+  },
+  {
+    "t0": 132.566,
+    "t1": 138.459,
+    "speaker": "Samantha",
+    "text": "And we flip and crop the images at random, so the network never sees exactly the same picture twice."
+  },
+  {
+    "t0": 139.059,
+    "t1": 142.426,
+    "speaker": "Samantha",
+    "text": "Together these tricks matter more than any change to the architecture."
+  },
+  {
+    "t0": 143.426,
+    "t1": 148.735,
+    "speaker": "Daniel",
+    "text": "Now let us talk about stability, which is the part that usually goes wrong at two in the morning."
+  },
+  {
+    "t0": 149.335,
+    "t1": 153.888,
+    "speaker": "Daniel",
+    "text": "To stop exploding gradients we use gradient clipping with a maximum norm of one."
+  },
+  {
+    "t0": 154.488,
+    "t1": 159.785,
+    "speaker": "Daniel",
+    "text": "If you see the loss jump to infinity, check that clipping is switched on before anything else."
+  },
+  {
+    "t0": 160.385,
+    "t1": 164.613,
+    "speaker": "Daniel",
+    "text": "We also log the gradient norm every hundred steps so problems show up early."
+  },
+  {
+    "t0": 165.613,
+    "t1": 170.887,
+    "speaker": "Samantha",
+    "text": "So how long do we train? In our runs the validation loss stopped improving after epoch twelve."
+  },
+  {
+    "t0": 171.487,
+    "t1": 175.977,
+    "speaker": "Samantha",
+    "text": "After that point the training loss keeps falling, but the model is only memorising."
+  },
+  {
+    "t0": 176.577,
+    "t1": 181.149,
+    "speaker": "Samantha",
+    "text": "That is why we keep the checkpoint with the best validation score, not the last one."
+  },
+  {
+    "t0": 182.149,
+    "t1": 184.369,
+    "speaker": "Daniel",
+    "text": "One more announcement before we finish."
+  },
+  {
+    "t0": 184.969,
+    "t1": 189.675,
+    "speaker": "Daniel",
+    "text": "From next week the lab session moves to the Hamilton building, on the second floor."
+  },
+  {
+    "t0": 190.275,
+    "t1": 194.513,
+    "speaker": "Daniel",
+    "text": "The room is bigger, and there are finally enough power sockets for everyone."
+  },
+  {
+    "t0": 195.513,
+    "t1": 200.815,
+    "speaker": "Samantha",
+    "text": "And our guest speaker next week works at the European Space Agency, on satellite imaging."
+  },
+  {
+    "t0": 201.415,
+    "t1": 205.291,
+    "speaker": "Samantha",
+    "text": "Please bring questions, she is happy to talk about careers as well."
+  },
+  {
+    "t0": 205.891,
+    "t1": 208.455,
+    "speaker": "Samantha",
+    "text": "That is all for today, see you on Thursday."
+  }
+]
