@@ -606,14 +606,18 @@ public actor EarPipeline {
         Task { [weak self] in
             guard let self else { return }
             var spoken: [String] = []
-            let outcome = await ApprovalGate().run(
-                action,
-                speak: { text in
-                    c.yield(.sentence(text))
-                    await self.say(text, trace: t)
-                },
-                listen: { seconds in await self.listen(seconds: seconds) })
-            spoken.append(action.proposal)
+            // ADR-021: with web search switched on, a search runs at once, with no spoken "yes"
+            let outcome: ApprovalOutcome =
+                if case .webSearch = action { .accepted(action) } else {
+                    await ApprovalGate().run(
+                        action,
+                        speak: { text in
+                            c.yield(.sentence(text))
+                            await self.say(text, trace: t)
+                        },
+                        listen: { seconds in await self.listen(seconds: seconds) })
+                }
+            if case .webSearch = action {} else { spoken.append(action.proposal) }
             var result: String
             switch outcome {
             case .accepted(let a), .edited(let a):

@@ -182,7 +182,9 @@ def main(argv: list[str] | None = None) -> int:
     d.set_defaults(fn=cmd_doctor)
     e = sub.add_parser("export", help="session measures as JSON")
     e.add_argument("--session", required=True)
-    if importlib.util.find_spec("earbridge.clipir"):  # private adapter, left out of the public release
+    if importlib.util.find_spec(
+        "earbridge.clipir"
+    ):  # private adapter, left out of the public release
         e.add_argument("--clipir", help="path to a ClipIR events.db")
     e.add_argument("--include-qa", action="store_true")
     e.add_argument("--include-transcript", action="store_true")

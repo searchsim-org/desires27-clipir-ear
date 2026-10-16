@@ -236,7 +236,8 @@ struct HomeView: View {
     }
 
     private var answerBody: String {
-        if !model.answerText.isEmpty { return model.answerText }
+        let shown = PromptBuilder.visibleWhileStreaming(model.answerText)  // never the SOURCE line, even mid-stream
+        if !shown.isEmpty { return shown }
         return model.isAnswering ? "Thinking…" : "No answer came back. Try asking again, or open the transcript."
     }
 

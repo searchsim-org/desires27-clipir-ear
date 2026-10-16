@@ -59,6 +59,15 @@ final class AppModel {
     var isAsking = false  // PTT held
     var isAnswering = false
     var tapToToggle = false
+    /// ADR-021: web search from this phone with the user's own Brave Search key (Keychain); off by default.
+    var webSearchEnabled = UserDefaults.standard.bool(forKey: "earWebSearch") {
+        didSet {
+            UserDefaults.standard.set(webSearchEnabled, forKey: "earWebSearch")
+            EgressGuard.shared.setWebSearch(enabled: webSearchEnabled && hasBraveKey)
+        }
+    }
+    private(set) var hasBraveKey = Keychain.read(AppModel.braveKeyAccount) != nil
+    nonisolated static let braveKeyAccount = "brave-search-api-key"
     var question = ""
     var answerText = ""
     var answerVoice = ""  // which voice spoke the last answer: "Kokoro", "Apple voice", "Mac"
@@ -223,6 +232,7 @@ final class AppModel {
         }
         // ADR-014; also in the simulator, where Qwen3-0.6B often returned no answer text (2026-10-15)
         llm = LLM(rawValue: defaults.string(forKey: "earModel") ?? "") ?? .gemma
+        EgressGuard.shared.setWebSearch(enabled: webSearchEnabled && hasBraveKey)
         retention.start()
         if let src = defaults.string(forKey: "earSource"), src.hasPrefix("fixture:") {
             sourceKind = .fixture(String(src.dropFirst("fixture:".count)))
@@ -276,7 +286,7 @@ final class AppModel {
 
     private func currentPipeline() -> EarPipeline {
         let key =
-            "\(sourceKind)|\(llm.rawValue)|\(tierMode.rawValue)|\(pairing?.host ?? "-")|\(appleVoiceID ?? "best")|\(kokoroVoice ?? "apple")"
+            "\(sourceKind)|\(llm.rawValue)|\(tierMode.rawValue)|\(pairing?.host ?? "-")|\(appleVoiceID ?? "best")|\(kokoroVoice ?? "apple")|\(webSearchEnabled && hasBraveKey)"
         if let pipeline, key == pipelineKey { return pipeline }
         let kind = sourceKind
         let fixtures = Self.fixturesDirectory ?? ""
@@ -295,7 +305,12 @@ final class AppModel {
             makeRecognizer: { try SherpaStreamingRecognizer() },
             answerer: answerer, embedder: try? LlamaEmbedder(),
             speaker: speakerForPipeline(), output: try? AudioOutput(sampleRate: 24_000),
-            bridge: bridge)
+            bridge: bridge,
+            executor: EarActionExecutor(
+                store: store,
+                search: webSearchEnabled && hasBraveKey
+                    ? BraveSearch(key: { Keychain.read(AppModel.braveKeyAccount) }) : nil,
+                answerer: answerer))
         var config = PipelineConfig()
         config.deviceModel = UIDevice.current.model
         config.policy = TierPolicy(mode: tierMode)
@@ -585,6 +600,22 @@ final class AppModel {
         Task { await b?.stop() }
     }
 
+    // MARK: web search (ADR-021)
+
+    /// Settings → Web search → Save: keeps the key in this iPhone's Keychain and switches search on.
+    func saveBraveKey(_ raw: String) {
+        let key = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !key.isEmpty, Keychain.save(key, account: Self.braveKeyAccount) else { return }
+        hasBraveKey = true
+        webSearchEnabled = true
+    }
+
+    func removeBraveKey() {
+        Keychain.delete(account: Self.braveKeyAccount)
+        hasBraveKey = false
+        webSearchEnabled = false
+    }
+
     // MARK: answer voice (ADR-020)
 
     /// Which voice spoke the sentences since `before` (FallbackSpeaker's counts; playback has finished by now).
@@ -777,4 +808,32 @@ final class StemPTT {
         target = nil
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
+}
+
+/// Generic-password Keychain item for this app, readable after the first unlock and never synced off the phone.
+enum Keychain {
+    private static func query(_ account: String) -> [String: Any] {
+        [
+            kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: "clipir-ear",
+            kSecAttrAccount as String: account,
+        ]
+    }
+
+    static func read(_ account: String) -> String? {
+        var q = query(account)
+        (q[kSecReturnData as String], q[kSecMatchLimit as String]) = (true, kSecMatchLimitOne)
+        var out: AnyObject?
+        guard SecItemCopyMatching(q as CFDictionary, &out) == errSecSuccess, let d = out as? Data else { return nil }
+        return String(decoding: d, as: UTF8.self)
+    }
+
+    @discardableResult static func save(_ value: String, account: String) -> Bool {
+        delete(account: account)
+        var q = query(account)
+        q[kSecValueData as String] = Data(value.utf8)
+        q[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+        return SecItemAdd(q as CFDictionary, nil) == errSecSuccess
+    }
+
+    static func delete(account: String) { SecItemDelete(query(account) as CFDictionary) }
 }

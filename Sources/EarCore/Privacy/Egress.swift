@@ -20,17 +20,20 @@ public final class ConnectionLedger: Sendable {
     public func reset() { entries.withLock { $0 = [] } }
 }
 
-/// The only way to open a network session (§2.5). Allowed: localhost, the paired Mac, and the model hosts
-/// only while a user-started download runs. Redirects are checked hop by hop and recorded in the ledger.
+/// The only way to open a network session (§2.5). Allowed: localhost, the paired Mac, the model hosts
+/// only while a user-started download runs, and the web-search host while the user has web search on (ADR-021). Redirects are checked hop by hop and recorded in the ledger.
 public final class EgressGuard: Sendable {
     public static let shared = EgressGuard()
     private static let local: Set<String> = ["localhost", "127.0.0.1", "::1"]
-    private let state = Mutex<(mac: String?, modelHosts: [String])>((nil, []))
+    private let state = Mutex<(mac: String?, modelHosts: [String], webSearch: Bool)>((nil, [], false))
     private let ledger: ConnectionLedger
 
     public init(ledger: ConnectionLedger = .shared) { self.ledger = ledger }
 
     public func setPairedMac(host: String?) { state.withLock { $0.mac = host?.lowercased() } }
+
+    /// Settings → Web search (ADR-021, default off).
+    public func setWebSearch(enabled: Bool) { state.withLock { $0.webSearch = enabled } }
 
     /// Opens the model-download window for the duration of `body` (explicit user action only).
     public func withModelDownloads<T>(hosts: [String], _ body: () async throws -> T) async rethrows -> T {
@@ -44,6 +47,7 @@ public final class EgressGuard: Sendable {
         if Self.local.contains(h) { return true }
         return state.withLock { s in
             if h == s.mac { return true }
+            if s.webSearch, h == BraveSearch.host { return true }
             return s.modelHosts.contains { h == $0 || h.hasSuffix("." + $0) }
         }
     }

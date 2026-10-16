@@ -84,6 +84,19 @@ public enum PromptBuilder {
             .trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
+    /// The part of a still-streaming answer to show on screen: everything before the `SOURCE:` line, and without a
+    /// last line that may be that line arriving token by token ("SOU").
+    public static func visibleWhileStreaming(_ text: String) -> String {
+        var s = text
+        if let r = s.range(of: #"SOURCE\s*:"#, options: [.regularExpression, .caseInsensitive]) {
+            s = String(s[..<r.lowerBound])
+        } else if let nl = s.lastIndex(of: "\n") {
+            let tail = s[s.index(after: nl)...].trimmingCharacters(in: .whitespaces).uppercased()
+            if "SOURCE:".hasPrefix(tail) { s = String(s[..<nl]) }
+        }
+        return s.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
     /// Splits a finished answer into the spoken text and the knowledge tier from its `SOURCE:` line.
     public static func parseSource(_ text: String) -> (answer: String, tier: String) {
         guard let r = text.range(of: #"SOURCE:\s*([a-z]+)"#, options: [.regularExpression, .caseInsensitive]) else {

@@ -12,7 +12,7 @@ from earbridge.store import Store
 
 
 def test_tls_fingerprint_matches_pairing(monkeypatch, port=9571):
-    monkeypatch.setattr(config, "save", lambda cfg: None)  # do not rotate the owner's token
+    monkeypatch.setattr(config, "save", lambda cfg: None)  # do not rotate the real config's token
     assert pairing.pair("127.0.0.1")["fp"] == tls.fingerprint()
 
     async def run():

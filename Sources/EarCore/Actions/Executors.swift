@@ -44,9 +44,14 @@ public final class EventKitStore: EventStoring, @unchecked Sendable {
 public struct EarActionExecutor: ActionExecutor {
     let store: SQLiteTranscriptStore
     let events: any EventStoring
+    let search: (any WebSearching)?
+    let answerer: (any Answerer)?
 
-    public init(store: SQLiteTranscriptStore, events: any EventStoring = EventKitStore()) {
-        (self.store, self.events) = (store, events)
+    public init(
+        store: SQLiteTranscriptStore, events: any EventStoring = EventKitStore(), search: (any WebSearching)? = nil,
+        answerer: (any Answerer)? = nil
+    ) {
+        (self.store, self.events, self.search, self.answerer) = (store, events, search, answerer)
     }
 
     public func execute(_ a: EarAction) async throws -> String {
@@ -69,9 +74,29 @@ public struct EarActionExecutor: ActionExecutor {
         case .pinWindow(let seconds):
             let n = try await store.pinLast(seconds: seconds)
             return "Pinned \(n) segment\(n == 1 ? "" : "s")."
-        case .webSearch:
-            return "Web search is disabled in this build."  // v0.1: recorded, never sent (§P6.1)
+        case .webSearch(let query):
+            guard let search else { return "Web search is off. Turn it on in Settings, under Web search." }
+            let results = try await search.search(query)
+            guard let top = results.first else { return "I found nothing on the web for \(query)." }
+            return "According to \(top.domain), \(try await summary(query, results))"
         }
+    }
+
+    /// The answerer sums up the results (ADR-021); without one, the top snippet is read out.
+    private func summary(_ query: String, _ results: [WebResult]) async throws -> String {
+        var text = results[0].snippet
+        if let answerer {
+            let notes = results.map { "Web result from \($0.domain): \($0.title). \($0.snippet)" }
+            var out = ""
+            for try await e in answerer.answer(
+                AnswerRequest(question: query, intent: .freeform, window: [], retrieved: [], notes: notes))
+            {
+                if case .token(let t) = e { out += t }
+            }
+            let parsed = PromptBuilder.parseSource(out).answer
+            if !parsed.isEmpty { text = parsed }
+        }
+        return text.prefix(1).lowercased() + text.dropFirst()
     }
 }
 

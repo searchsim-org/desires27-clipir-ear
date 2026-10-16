@@ -3,7 +3,7 @@ import XCTest
 
 @testable import EarCore
 
-/// Device benchmarks (HANDOVER §12). Run on the owner's iPhone only (ADR-010: pending a signed build):
+/// Device benchmarks (HANDOVER §12). Run on a signed device build only (ADR-010):
 ///   xcodebuild test -scheme ClipIREar -destination 'id=<UDID>' -only-testing:ClipIREarTests/LLMBench
 /// Models come from the app's Documents/models (Finder sideload, §13); results are attached as JSON.
 class DeviceBenchmark: XCTestCase {

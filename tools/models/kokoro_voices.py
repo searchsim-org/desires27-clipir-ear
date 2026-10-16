@@ -14,7 +14,9 @@ SHAPE = (510, 1, 256)
 
 def npy(raw: bytes) -> bytes:
     header = f"{{'descr': '<f4', 'fortran_order': False, 'shape': {SHAPE}, }}"
-    header += " " * (64 - (10 + len(header) + 1) % 64) + "\n"  # pad so the data starts on a 64-byte boundary
+    header += (
+        " " * (64 - (10 + len(header) + 1) % 64) + "\n"
+    )  # pad so the data starts on a 64-byte boundary
     return b"\x93NUMPY\x01\x00" + struct.pack("<H", len(header)) + header.encode() + raw
 
 

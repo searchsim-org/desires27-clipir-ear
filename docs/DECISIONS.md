@@ -99,3 +99,11 @@ Answers on the phone use Kokoro-82M through KokoroSwift 1.0.11 and MisakiSwift 1
 - Kokoro tests run only under xcodebuild (`make test-kokoro`); `swift test` skips them.
 - The model files add about 360 MB to the phone. Loading the weights takes about a second on the main actor when a pipeline is built. A memory warning while listening switches Kokoro off; its weights and MLX's buffer cache are freed when listening stops.
 - The Mac tier still speaks with the Apple voice.
+
+## ADR-021: Voice web search from the phone with the user's own Brave Search key
+
+- The phone calls the Brave Search API (`api.search.brave.com`) with the query text alone and asks for three results. Search works without a Mac.
+- Web search is off until the user pastes a Brave Search API key in Settings. The app keeps the key in the Keychain on this device only, and `EgressGuard` allows the host only while the setting is on.
+- "Search the web for …" runs at once, without a spoken confirmation. The on-phone model sums up the results, and the answer starts "According to ⟨domain⟩".
+- Results are used for one answer and never stored. The answer is stored like any other answer.
+- `tools/ci/egress_check.py` allows the API host in `Sources/EarCore/Actions/WebSearch.swift` only.

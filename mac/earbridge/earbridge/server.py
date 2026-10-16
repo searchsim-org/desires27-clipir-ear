@@ -163,9 +163,7 @@ class Connection:
         speaker = asyncio.create_task(self.speak(qid, sentences, latency, mark))
         text, n = "", 0
         try:
-            if (
-                self.desk
-            ):  # Wizard of Oz: a person answers, same voice and channel (user studies)
+            if self.desk:  # Wizard of Oz: a person answers, same voice and channel (user studies)
                 context = "\n".join(s["text"] for s in ctx["window"])
                 source = wizard.stream(self.desk, qid, question, context, start, self.cancel)
             else:

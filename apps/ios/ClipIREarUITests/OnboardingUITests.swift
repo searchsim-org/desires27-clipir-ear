@@ -39,7 +39,7 @@ final class OnboardingUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Missed something?"].exists)
 
         app.terminate()  // shown once: a relaunch goes straight to the app
-        app.launchArguments = ["-earCues", "NO"]  // the simulator may hold the owner's setting
+        app.launchArguments = ["-earCues", "NO"]  // the simulator may hold a saved setting
         app.launch()
         XCTAssertTrue(app.buttons["listenButton"].waitForExistence(timeout: 10))
         XCTAssertFalse(app.buttons["onboardingNext"].exists)

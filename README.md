@@ -13,7 +13,7 @@ Status: research prototype, English only, no App Store build.
 | `EarCLI` | macOS | Command-line runner; `earbridge` uses it for speech in and out |
 | `earbridge` (Python, optional) | Mac on the same LAN or Tailscale network | WebSocket service that answers through a local Ollama model |
 
-With a paired Mac in `auto` mode, a question goes to the Mac when the round trip is under 150 ms; if the Mac sends no answer within 3 s, the phone answers itself. Speech recognition is the sherpa-onnx streaming Zipformer with Silero VAD on both tiers. Both tiers answer with Gemma 4 E2B (Q4_0 GGUF), through llama.cpp on the phone and Ollama on the Mac. The phone speaks with Kokoro-82M on MLX and falls back to the best installed Apple voice.
+With a paired Mac in `auto` mode, a question goes to the Mac when the round trip is under 150 ms; if the Mac sends no answer within 3 s, the phone answers itself. Speech recognition is the sherpa-onnx streaming Zipformer with Silero VAD on both tiers. Both tiers answer with Gemma 4 E2B (Q4_0 GGUF), through llama.cpp on the phone and Ollama on the Mac. The phone speaks with Kokoro-82M on MLX and falls back to the best installed Apple voice. The phone needs no Mac: a paired Mac only takes over recognition and answering when it is close by.
 
 ## Requirements
 
@@ -95,6 +95,7 @@ More detail: [architecture](docs/ARCHITECTURE.md), [phone to Mac protocol](docs/
 - Transcript segments older than the retention window (30 minutes by default, 1 minute to 24 hours) are deleted unless pinned.
 - Shaking the phone, tapping "Forget the last 10 minutes" or saying "forget the last N minutes" deletes recent segments.
 - One guard opens every network connection and allows only localhost, the paired Mac, and model hosts during a download you start. CI rejects other hosts and analytics, telemetry and crash-reporting SDKs.
+- Web search is off until you paste your own Brave Search API key in Settings. The key stays in this iPhone's Keychain. Saying "search the web for ..." then sends those words, and nothing else, to `api.search.brave.com`; the results feed one answer and are not stored.
 - Exports hold counts and latencies; question text, answers and the transcript only when you tick them.
 
 [docs/PRIVACY.md](docs/PRIVACY.md) has the details and known gaps.

@@ -31,6 +31,7 @@
 		9C5E49C817BE3E3EE6ED923C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB55C860A5D1B0BCE1B659C /* OnboardingView.swift */; };
 		A18673C26FD96CC46F25434E /* EarTTSKokoro in Frameworks */ = {isa = PBXBuildFile; productRef = 12B56C3E543F2896ECDF967D /* EarTTSKokoro */; };
 		A43954B3FA422596E820CB9B /* ClipIREarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88578A0B996F5BEB26098A0E /* ClipIREarApp.swift */; };
+		AAAA7AC45BF27FB88715D22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3358506086FE54234FAE8 /* Assets.xcassets */; };
 		AF072CCF4086111FD3E1AF46 /* EarTTSKokoro in Frameworks */ = {isa = PBXBuildFile; productRef = 318344A91743F79FCA36B0E3 /* EarTTSKokoro */; };
 		BED284F401152B0C1CF9179E /* DemoStabilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E1D0FD226C57028301152 /* DemoStabilityTest.swift */; };
 		DFCFF0B0D52888B0546B1F41 /* EarCore in Frameworks */ = {isa = PBXBuildFile; productRef = BF0401D4D0763A1E081FA3E7 /* EarCore */; };
@@ -107,10 +108,11 @@
 		CD335465D33A508CF6AE81B8 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		D80E1D0FD226C57028301152 /* DemoStabilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStabilityTest.swift; sourceTree = "<group>"; };
 		D8D8C810C8DDAB7A6116188B /* AmbientSoak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientSoak.swift; sourceTree = "<group>"; };
-		E0A5225659BD773B05757228 /* kokoro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = kokoro; path = ../../..; sourceTree = SOURCE_ROOT; };
 		E3BE4845C6A2098E1E3EEA02 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		E5B3358506086FE54234FAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE6D37ED6A32FFA5FAAF2BF2 /* omimuse */ = {isa = PBXFileReference; lastKnownFileType = folder; name = omimuse; path = ../../..; sourceTree = SOURCE_ROOT; };
 		F79EA1A7145E8E164A1B889B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		"TEMP_DAFB7D25-8F41-43DD-969B-9DD6336C43B0" /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		"TEMP_EDB672B0-CFBB-4FE5-B88C-447CDE6D669A" /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +181,7 @@
 		6F55B1BA8041B2DE3178601F /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				E0A5225659BD773B05757228 /* kokoro */,
+				EE6D37ED6A32FFA5FAAF2BF2 /* omimuse */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				E3BE4845C6A2098E1E3EEA02 /* AppModel.swift */,
+				E5B3358506086FE54234FAE8 /* Assets.xcassets */,
 				88578A0B996F5BEB26098A0E /* ClipIREarApp.swift */,
 				BBDC6520FC9903E1CFCA77EE /* ClipIRLogo.png */,
 				94B290DB7932FDA6A9FD752F /* DebugView.swift */,
@@ -237,10 +240,10 @@
 			path = ClipIREarTests;
 			sourceTree = "<group>";
 		};
-		"TEMP_C2D842BA-A463-454F-9D72-B256E578081A" /* ClipIREar */ = {
+		"TEMP_4C54CE38-E915-4587-93AB-46FD2B155D2B" /* ClipIREar */ = {
 			isa = PBXGroup;
 			children = (
-				"TEMP_DAFB7D25-8F41-43DD-969B-9DD6336C43B0" /* Signing.xcconfig */,
+				"TEMP_EDB672B0-CFBB-4FE5-B88C-447CDE6D669A" /* Signing.xcconfig */,
 			);
 			path = ClipIREar;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAA7AC45BF27FB88715D22D /* Assets.xcassets in Resources */,
 				1061095A9867B6FBADD4E459 /* ClipIRLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +510,7 @@
 		};
 		41CCADED64A2B4AC9FF7B44E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_DAFB7D25-8F41-43DD-969B-9DD6336C43B0" /* Signing.xcconfig */;
+			baseConfigurationReference = "TEMP_EDB672B0-CFBB-4FE5-B88C-447CDE6D669A" /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -582,7 +586,7 @@
 		};
 		4C68E1B867B3790899B689E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_DAFB7D25-8F41-43DD-969B-9DD6336C43B0" /* Signing.xcconfig */;
+			baseConfigurationReference = "TEMP_EDB672B0-CFBB-4FE5-B88C-447CDE6D669A" /* Signing.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

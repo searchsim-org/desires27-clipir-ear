@@ -106,7 +106,7 @@ harness:
 report:
 	$(UV) python tools/harness/report.py
 
-demo:  # ADR-010: simulator only until the owner signs a device build (then: xcrun devicectl device install app …)
+demo:  # ADR-010: simulator; for a device, sign with your team and use xcrun devicectl device install app
 	xcrun simctl boot EarSim 2>/dev/null || true
 	open -a Simulator
 	set -o pipefail; xcodebuild build -project $(XCODEPROJ) -scheme ClipIREar -destination '$(SIM_DEST)' \

@@ -24,6 +24,7 @@ struct MacView: View {
     @State private var scanning = false
     @State private var error: String?
     @State private var kokoroVoices: [String] = []
+    @State private var braveKey = ""
 
     var body: some View {
         NavigationStack {
@@ -140,6 +141,38 @@ struct MacView: View {
                             + "English voice in Settings → Accessibility → Spoken Content → Voices.")
                 }
                 .task { kokoroVoices = KokoroSpeaker.installedVoices() }
+                Section {
+                    if model.hasBraveKey {
+                        Toggle("Search the web when I ask", isOn: $model.webSearchEnabled)
+                            .accessibilityIdentifier("webSearchToggle")
+                        Label("Brave Search key saved on this iPhone", systemImage: "key.fill")
+                            .font(.footnote).foregroundStyle(.secondary)
+                        Button("Remove key", role: .destructive, action: model.removeBraveKey)
+                    } else {
+                        Text(
+                            "Add a Brave Search API key to answer questions from the web. The free plan covers about 1,000 searches a month."
+                        )
+                        .font(.footnote).foregroundStyle(.secondary)
+                        Link(destination: URL(string: "https://brave.com/search/api/")!) {
+                            Label("Get a free key from Brave", systemImage: "arrow.up.right.square")
+                        }
+                        SecureField("Paste your API key", text: $braveKey)
+                            .textInputAutocapitalization(.never).autocorrectionDisabled()
+                            .accessibilityIdentifier("braveKeyField")
+                        Button("Save key and turn on web search") {
+                            model.saveBraveKey(braveKey)
+                            braveKey = ""
+                        }
+                        .disabled(braveKey.trimmingCharacters(in: .whitespaces).isEmpty)
+                    }
+                } header: {
+                    Text("Web search")
+                } footer: {
+                    Text(
+                        "Say \u{201C}search the web for …\u{201D}. Only those words go to Brave Search; nothing you heard "
+                            + "leaves the phone. The answer stays on this iPhone and reaches your Mac only while it is paired."
+                    )
+                }
                 Section {
                     Toggle("Demo mode", isOn: $model.demoMode)
                     NavigationLink("Debug (route, frames, network ledger)") { DebugView(model: model) }

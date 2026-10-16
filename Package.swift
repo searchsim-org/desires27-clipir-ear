@@ -6,7 +6,7 @@ import PackageDescription
 
 let package = Package(
     name: "EarCore",
-    platforms: [.iOS(.v18), .macOS(.v15)],  // ADR-008: iOS 18 (owner phone on 18.6.2), ADR-005: macOS 15
+    platforms: [.iOS(.v18), .macOS(.v15)],  // ADR-008: iOS 18, ADR-005: macOS 15
     products: [
         .library(name: "EarCore", targets: ["EarCore"]),
         .executable(name: "EarCLI", targets: ["EarCLI"]),

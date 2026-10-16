@@ -23,6 +23,7 @@ ClipIR Ear records speech from people who did not install it. This page lists wh
 ## Network
 
 - `EgressGuard` is the only way the app opens a network session. It allows localhost, the paired Mac, and model hosts only inside an explicit download window. It checks every redirect hop and records each destination, allowed or not, in `ConnectionLedger`, which the Debug screen shows.
+- Web search is off by default. When you save your own Brave Search API key in Settings, the app keeps it in the Keychain on this device only and allows one more host, `api.search.brave.com`. A search sends the words you said after "search the web for" and nothing else: no transcript, no context, no identifiers. The results are used for one answer and not stored. The answer is stored like any other answer and leaves the phone only to a paired Mac.
 - Allowed model hosts are listed in `tools/models/sources.json`. Downloads run only on `make models`, and each file's SHA-256 is checked against `tools/models/models.lock.json`. Where upstream publishes no hash, the first download records it and later downloads must match.
 - The link to the Mac uses TLS with a pinned self-signed certificate when paired by QR code. Pairing by typed code uses plain `ws://` and is meant for `--no-tls` on an already encrypted link such as Tailscale.
 - `earbridge` talks only to Ollama on `127.0.0.1:11434` and never pulls from a model registry; `earbridge doctor --fix` imports the pinned GGUF file.

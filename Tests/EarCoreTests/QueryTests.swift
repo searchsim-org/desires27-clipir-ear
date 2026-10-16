@@ -96,6 +96,16 @@ final class PromptBuilderTests: XCTestCase {
         XCTAssertEqual(PromptBuilder.parseSource("x\nsource: GENERAL").tier, "general")
         XCTAssertEqual(PromptBuilder.parseSource("x\nSOURCE: banana").tier, "none")
     }
+
+    /// The answer card shows the text while it streams; the SOURCE line, even half-arrived, never shows.
+    func testStreamingTextHidesTheSourceLine() {
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("It is Adam."), "It is Adam.")
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("It is Adam.\nSOURCE: transcript | notes"), "It is Adam.")
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("It is Adam.\nSOU"), "It is Adam.")
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("It is Adam.\n"), "It is Adam.")
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("It is Adam. source: general"), "It is Adam.")
+        XCTAssertEqual(PromptBuilder.visibleWhileStreaming("Sounds of the river"), "Sounds of the river")
+    }
 }
 
 final class SentenceSplitterTests: XCTestCase {

@@ -32,6 +32,12 @@ CODE_SUFFIXES = {
     ".c",
 }
 LOCAL_HOSTS = {"localhost", "127.0.0.1", "::1", "[::1]", "0.0.0.0"}
+RESERVED_HOSTS = {"example.com", "example.org", "example.net"}  # RFC 2606: allowed in Tests/ only
+# ADR-021: the web-search API is reachable from one file only; the Settings link opens Safari, not the app
+PER_FILE_HOSTS = {
+    "Sources/EarCore/Actions/WebSearch.swift": {"api.search.brave.com"},
+    "apps/ios/ClipIREar/App/MacView.swift": {"brave.com"},
+}
 # Apple plist doctype names a DTD, it is never fetched
 DOCTYPE_RE = re.compile(
     r"^<!DOCTYPE plist PUBLIC .* \"http://www\.apple\.com/DTDs/PropertyList-1\.0\.dtd\">$"
@@ -67,6 +73,9 @@ def check(root: Path) -> list[str]:
     patterns, hosts, hits = load_patterns(root), allowed_hosts(root), []
     for p in iter_files(root):
         rel = p.relative_to(root)
+        file_hosts = hosts | PER_FILE_HOSTS.get(rel.as_posix(), set())
+        if rel.parts[0] == "Tests":
+            file_hosts |= RESERVED_HOSTS
         for n, line in enumerate(p.read_text(errors="replace").splitlines(), 1):
             low = line.lower()
             if DOCTYPE_RE.match(line.strip()):
@@ -76,9 +85,9 @@ def check(root: Path) -> list[str]:
             for host in URL_RE.findall(line):
                 host = host.lower()
                 # ponytail: placeholders like ws://<mac> or ${HOST} are not hosts; real ones must be allow-listed
-                if not re.match(r"^[a-z0-9.\-\[\]:]+$", host) or host in hosts:
+                if not re.match(r"^[a-z0-9.\-\[\]:]+$", host) or host in file_hosts:
                     continue
-                if not any(host.endswith("." + h) for h in hosts):
+                if not any(host.endswith("." + h) for h in file_hosts):
                     hits.append(f"{rel}:{n}: host '{host}' not in allow-list")
     return hits
 
